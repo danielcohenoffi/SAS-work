@@ -1,0 +1,4061 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><META content="IE=5.0000" http-equiv="X-UA-Compatible">
+<TITLE>SAS Output</TITLE>
+<META name=GENERATOR content="MSHTML 11.00.10570.1001">
+<META content="text/html; charset=windows-1252" http-equiv=Content-type>
+<STYLE type=text/css>.aftercaption {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; PADDING-TOP: 4pt; BORDER-SPACING: 0px; BACKGROUND-COLOR: #fafbfe
+}
+.batch {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 1px solid; FONT-FAMILY: 'SAS Monospace', 'Courier New', Courier, monospace; BORDER-RIGHT: #c1c1c1 1px solid; BORDER-COLLAPSE: separate; BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: normal; COLOR: #000000; PADDING-BOTTOM: 7px; FONT-STYLE: normal; PADDING-TOP: 7px; PADDING-LEFT: 7px; BORDER-SPACING: 1px; BORDER-LEFT: #c1c1c1 1px solid; PADDING-RIGHT: 7px; BACKGROUND-COLOR: #fafbfe
+}
+.beforecaption {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-SPACING: 0px; BACKGROUND-COLOR: #fafbfe
+}
+.body {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; MARGIN-LEFT: 8px; BACKGROUND-COLOR: #fafbfe; MARGIN-RIGHT: 8px
+}
+.bodydate {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; WIDTH: 100%; VERTICAL-ALIGN: top; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; TEXT-ALIGN: right; BORDER-SPACING: 0px; BACKGROUND-COLOR: #fafbfe
+}
+.bycontentfolder {
+	LIST-STYLE-TYPE: none; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; MARGIN-LEFT: 6pt
+}
+.byline {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-SPACING: 0px; BACKGROUND-COLOR: #fafbfe
+}
+.bylinecontainer {
+	FONT-SIZE: x-small; BORDER-TOP: #000000 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #000000 0px solid; WIDTH: 100%; BORDER-BOTTOM: #000000 0px solid; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BORDER-SPACING: 1px; BORDER-LEFT: #000000 0px solid; BACKGROUND-COLOR: #fafbfe
+}
+.caption {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-SPACING: 0px; BACKGROUND-COLOR: #fafbfe
+}
+.cell {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.container {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.contentfolder {
+	LIST-STYLE-TYPE: none; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; MARGIN-LEFT: 6pt
+}
+.contentitem {
+	LIST-STYLE-TYPE: none; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; MARGIN-LEFT: 6pt
+}
+.contentproclabel {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.contentprocname {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.contents {
+	LIST-STYLE-TYPE: decimal; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; MARGIN-LEFT: 8px; BACKGROUND-COLOR: #fafbfe; MARGIN-RIGHT: 8px
+}
+.contentsdate {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; WIDTH: 100%; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.contenttitle {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: italic; BACKGROUND-COLOR: #fafbfe
+}
+.continued {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; WIDTH: 100%; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-SPACING: 0px; BACKGROUND-COLOR: #fafbfe
+}
+.data {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #c1c1c1 1px solid; BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: normal; FONT-STYLE: normal; BORDER-LEFT: #c1c1c1 0px solid; BACKGROUND-COLOR: #ffffff
+}
+.dataemphasis {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #c1c1c1 1px solid; BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: normal; FONT-STYLE: normal; BORDER-LEFT: #c1c1c1 0px solid; BACKGROUND-COLOR: #ffffff
+}
+.dataemphasisfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: 'Courier New', Courier, monospace; BORDER-RIGHT: #c1c1c1 1px solid; BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: normal; FONT-STYLE: italic; BORDER-LEFT: #c1c1c1 0px solid; BACKGROUND-COLOR: #ffffff
+}
+.dataempty {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #c1c1c1 1px solid; BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: normal; FONT-STYLE: normal; BORDER-LEFT: #c1c1c1 0px solid; BACKGROUND-COLOR: #ffffff
+}
+.datafixed {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: 'Courier New', Courier; BORDER-RIGHT: #c1c1c1 1px solid; BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: normal; FONT-STYLE: normal; BORDER-LEFT: #c1c1c1 0px solid; BACKGROUND-COLOR: #ffffff
+}
+.datastrong {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #c1c1c1 1px solid; BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: bold; COLOR: #000000; FONT-STYLE: normal; BORDER-LEFT: #c1c1c1 0px solid; BACKGROUND-COLOR: #ffffff
+}
+.datastrongfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: 'Courier New', Courier, monospace; BORDER-RIGHT: #c1c1c1 1px solid; BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: bold; COLOR: #000000; FONT-STYLE: normal; BORDER-LEFT: #c1c1c1 0px solid; BACKGROUND-COLOR: #ffffff
+}
+.date {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; WIDTH: 100%; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.document {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+A:link {
+	COLOR: #0000ff
+}
+A:visited {
+	COLOR: #800080
+}
+A:active {
+	COLOR: #800080
+}
+.errorbanner {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.errorcontent {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.errorcontentfixed {
+	FONT-SIZE: x-small; FONT-FAMILY: 'Courier New', Courier; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.extendedpage {
+	FONT-SIZE: x-small; BORDER-TOP: #000000 1pt solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #000000 1pt solid; BORDER-BOTTOM: #000000 1pt solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: italic; TEXT-ALIGN: center; BORDER-LEFT: #000000 1pt solid; BACKGROUND-COLOR: #fafbfe
+}
+.fatalbanner {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.fatalcontent {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.fatalcontentfixed {
+	FONT-SIZE: x-small; FONT-FAMILY: 'Courier New', Courier; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.folderaction {
+	LIST-STYLE-TYPE: none; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; MARGIN-LEFT: 6pt
+}
+.footer {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.footeremphasis {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: italic; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.footeremphasisfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: 'Courier New', Courier, monospace; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: italic; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.footerempty {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.footerfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: 'Courier New', Courier; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.footerstrong {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.footerstrongfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: 'Courier New', Courier, monospace; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.frame {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.graph {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 1px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #c1c1c1 1px solid; BORDER-COLLAPSE: separate; BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BORDER-SPACING: 1px; BORDER-LEFT: #c1c1c1 1px solid; BACKGROUND-COLOR: #fafbfe
+}
+.header {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.headeremphasis {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: italic; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #d8dbd3
+}
+.headeremphasisfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: 'Courier New', Courier, monospace; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: italic; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #d8dbd3
+}
+.headerempty {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.headerfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: 'Courier New', Courier; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.headersandfooters {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #edf2f9
+}
+.headerstrong {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #000000; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #d8dbd3
+}
+.headerstrongfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: 'Courier New', Courier, monospace; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #000000; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #d8dbd3
+}
+.index {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.indexaction {
+	LIST-STYLE-TYPE: none; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; MARGIN-LEFT: 6pt
+}
+.indexitem {
+	LIST-STYLE-TYPE: none; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; MARGIN-LEFT: 6pt
+}
+.indexprocname {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.indextitle {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: italic; BACKGROUND-COLOR: #fafbfe
+}
+.layoutcontainer {
+	BORDER-TOP: #000000 0px solid; BORDER-RIGHT: #000000 0px solid; BORDER-BOTTOM: #000000 0px solid; BORDER-SPACING: 30px; BORDER-LEFT: #000000 0px solid
+}
+.layoutregion {
+	BORDER-TOP: #000000 0px solid; BORDER-RIGHT: #000000 0px solid; BORDER-BOTTOM: #000000 0px solid; BORDER-SPACING: 30px; BORDER-LEFT: #000000 0px solid
+}
+.linecontent {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #c1c1c1 1px solid; BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #c1c1c1 0px solid; BACKGROUND-COLOR: #fafbfe
+}
+.list {
+	LIST-STYLE-TYPE: disc; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list10 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list2 {
+	LIST-STYLE-TYPE: circle; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list3 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list4 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list5 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list6 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list7 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list8 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list9 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem {
+	LIST-STYLE-TYPE: disc; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem10 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem2 {
+	LIST-STYLE-TYPE: circle; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem3 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem4 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem5 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem6 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem7 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem8 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem9 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.note {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.notebanner {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.notecontent {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.notecontentfixed {
+	FONT-SIZE: x-small; FONT-FAMILY: 'Courier New', Courier; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.output {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 1px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #c1c1c1 1px solid; BORDER-COLLAPSE: separate; BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BORDER-SPACING: 1px; BORDER-LEFT: #c1c1c1 1px solid; BACKGROUND-COLOR: #fafbfe
+}
+.pageno {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; VERTICAL-ALIGN: top; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; TEXT-ALIGN: right; BORDER-SPACING: 0px; BACKGROUND-COLOR: #fafbfe
+}
+.pages {
+	LIST-STYLE-TYPE: decimal; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; MARGIN-LEFT: 8px; BACKGROUND-COLOR: #fafbfe; MARGIN-RIGHT: 8px
+}
+.pagesdate {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; WIDTH: 100%; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.pagesitem {
+	LIST-STYLE-TYPE: none; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; MARGIN-LEFT: 6pt
+}
+.pagesproclabel {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.pagesprocname {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.pagestitle {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: italic; BACKGROUND-COLOR: #fafbfe
+}
+.paragraph {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.parskip {
+	FONT-SIZE: x-small; BORDER-TOP: #000000 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #000000 0px solid; BORDER-BOTTOM: #000000 0px solid; FONT-WEIGHT: bold; FONT-STYLE: normal; BORDER-SPACING: 0px; BORDER-LEFT: #000000 0px solid
+}
+.prepage {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; TEXT-ALIGN: left; BACKGROUND-COLOR: #fafbfe
+}
+.proctitle {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.proctitlefixed {
+	FONT-SIZE: x-small; FONT-FAMILY: 'Courier New', Courier, monospace; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.rowfooter {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowfooteremphasis {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: italic; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowfooteremphasisfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: 'Courier New', Courier, monospace; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: italic; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowfooterempty {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowfooterfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: 'Courier New', Courier; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowfooterstrong {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowfooterstrongfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: 'Courier New', Courier, monospace; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowheader {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowheaderemphasis {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: italic; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowheaderemphasisfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: 'Courier New', Courier, monospace; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: italic; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowheaderempty {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowheaderfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: 'Courier New', Courier; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowheaderstrong {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowheaderstrongfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: 'Courier New', Courier, monospace; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.systemfooter {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter10 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter2 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter3 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter4 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter5 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter6 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter7 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter8 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter9 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemtitle {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemtitle10 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemtitle2 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemtitle3 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemtitle4 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemtitle5 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemtitle6 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemtitle7 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemtitle8 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemtitle9 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systitleandfootercontainer {
+	FONT-SIZE: x-small; BORDER-TOP: #000000 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #000000 0px solid; WIDTH: 100%; BORDER-BOTTOM: #000000 0px solid; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BORDER-SPACING: 1px; BORDER-LEFT: #000000 0px solid; BACKGROUND-COLOR: #fafbfe
+}
+.table {
+	BORDER-TOP: #c1c1c1 1px solid; BORDER-RIGHT: #c1c1c1 0px solid; BORDER-COLLAPSE: collapse; BORDER-BOTTOM: #c1c1c1 0px solid; BORDER-SPACING: 0px; BORDER-LEFT: #c1c1c1 1px solid
+}
+.top_stacked_value {
+	BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; PADDING-BOTTOM: 1px; BORDER-LEFT: 0px
+}
+.middle_stacked_value {
+	BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; PADDING-BOTTOM: 1px; PADDING-TOP: 1px; BORDER-LEFT: 0px
+}
+.bottom_stacked_value {
+	BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; PADDING-TOP: 1px; BORDER-LEFT: 0px
+}
+.titleandnotecontainer {
+	FONT-SIZE: x-small; BORDER-TOP: #000000 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #000000 0px solid; WIDTH: 100%; BORDER-BOTTOM: #000000 0px solid; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BORDER-SPACING: 1px; BORDER-LEFT: #000000 0px solid; BACKGROUND-COLOR: #fafbfe
+}
+.titlesandfooters {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.usertext {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.warnbanner {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.warncontent {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.warncontentfixed {
+	FONT-SIZE: x-small; FONT-FAMILY: 'Courier New', Courier; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.l {
+	TEXT-ALIGN: left
+}
+.c {
+	TEXT-ALIGN: center
+}
+.r {
+	TEXT-ALIGN: right
+}
+.d {
+	TEXT-ALIGN: right
+}
+.j {
+	TEXT-ALIGN: justify
+}
+.t {
+	VERTICAL-ALIGN: top
+}
+.m {
+	VERTICAL-ALIGN: middle
+}
+.b {
+	VERTICAL-ALIGN: bottom
+}
+TD {
+	VERTICAL-ALIGN: top
+}
+TH {
+	VERTICAL-ALIGN: top
+}
+.stacked_cell {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px
+}
+</STYLE>
+
+<SCRIPT language=javascript type=text/javascript>
+<!-- 
+function startup(){
+
+}
+function shutdown(){
+
+}
+
+//-->
+</SCRIPT>
+</HEAD>
+<BODY class=body onload=startup() onunload=shutdown()>
+<SCRIPT language=javascript type=text/javascript>
+<!-- 
+var _info = navigator.userAgent
+var _ie = (_info.indexOf("MSIE") > 0
+          && _info.indexOf("Win") > 0
+          && _info.indexOf("Windows 3.1") < 0);
+var _ie64 = _info.indexOf("x64") > 0
+
+//-->
+</SCRIPT>
+
+<DIV class=branch><A name=IDX></A>
+<TABLE class=systitleandfootercontainer cellSpacing=1 cellPadding=1 rules=none 
+width="100%" summary="Page Layout" border=0 frame=void>
+  <TBODY>
+  <TR>
+    <TD class="c systemtitle">The SAS System</TD></TR></TBODY></TABLE><BR>
+<DIV class="c proctitle">The PHREG Procedure</DIV>
+<P>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Model Information" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=2 scope=colgroup>Model 
+  Information</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Data Set</TH>
+    <TD class="l data">F532.FINAL2</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Dependent Variable</TH>
+    <TD class="l data">years</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Censoring Variable</TH>
+    <TD class="l data">divorce</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Censoring Value(s)</TH>
+    <TD class="l data">0</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Ties Handling</TH>
+    <TD class="l data">BRESLOW</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX1></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Number of Observations" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <TBODY>
+  <TR>
+    <TH class="l stacked_cell rowheader" scope=row>
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="l rowheader top_stacked_value" scope=row>Number of 
+            Observations Read</TD></TR>
+        <TR>
+          <TD class="l rowheader bottom_stacked_value" scope=row>Number of 
+            Observations Used</TD></TR></TBODY></TABLE></TH>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">3371</TD></TR>
+        <TR>
+          <TD 
+  class="r data bottom_stacked_value">3371</TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX2></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Class Level Information" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=4 scope=colgroup>Class Level 
+  Information</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Class</TH>
+    <TH class="l b header" scope=col>Value</TH>
+    <TH class="c b header" colSpan=2 scope=colgroup>Design 
+  Variables</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>hubeduc</TH>
+    <TH class="l rowheader" scope=row>0</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">0</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>&nbsp;</TH>
+    <TH class="l rowheader" scope=row>1</TH>
+    <TD class="r data">0</TD>
+    <TD class="r data">0</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>&nbsp;</TH>
+    <TH class="l rowheader" scope=row>2</TH>
+    <TD class="r data">0</TD>
+    <TD class="r data">1</TD></TR></TBODY></TABLE></DIV></DIV><BR><A name=IDX3></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Summary of Event and Censored Observations" 
+  frame=box><COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=4 scope=colgroup>Summary of the Number of 
+      Event and Censored<BR>Values</TH></TR>
+  <TR>
+    <TH class="r b header" scope=col>Total</TH>
+    <TH class="r b header" scope=col>Event</TH>
+    <TH class="r b header" scope=col>Censored</TH>
+    <TH class="r b header" scope=col>Percent<BR>Censored</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="r data">3371</TD>
+    <TD class="r data">1032</TD>
+    <TD class="r data">2339</TD>
+    <TD class="r data">69.39</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX4></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Convergence Status" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" scope=col>Convergence Status</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="c data">Convergence criterion (GCONV=1E-8) 
+  satisfied.</TD></TR></TBODY></TABLE></DIV></DIV><BR><A name=IDX5></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Model Fit Statistics" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=3 scope=colgroup>Model Fit Statistics</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Criterion</TH>
+    <TH class="r b header" scope=col>Without<BR>Covariates</TH>
+    <TH class="r b header" scope=col>With<BR>Covariates</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>-2 LOG L</TH>
+    <TD class="r data">15688.784</TD>
+    <TD class="r data">15635.015</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>AIC</TH>
+    <TD class="r data">15688.784</TD>
+    <TD class="r data">15647.015</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>SBC</TH>
+    <TD class="r data">15688.784</TD>
+    <TD class="r data">15676.651</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX6></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Test of Global Null Hypothesis" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=4 scope=colgroup>Testing Global Null 
+      Hypothesis: BETA=0</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Test</TH>
+    <TH class="r b header" scope=col>Chi-Square</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;ChiSq</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Likelihood Ratio</TH>
+    <TD class="r data">53.7687</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Score</TH>
+    <TD class="r data">55.3221</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Wald</TH>
+    <TD class="r data">55.1309</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">&lt;.0001</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX7></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Type 3 Chi-Square Tests" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=4 scope=colgroup>Type 3 Tests</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Effect</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>Wald Chi-Square</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;ChiSq</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>age</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">10.0430</TD>
+    <TD class="r data">0.0015</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>income</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">8.3567</TD>
+    <TD class="r data">0.0038</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>mixed2</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">8.1750</TD>
+    <TD class="r data">0.0042</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>hubeduc</TH>
+    <TD class="r data">2</TD>
+    <TD class="r data">23.6587</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>hubblack</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">4.3032</TD>
+    <TD class="r data">0.0380</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX8></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Maximum Likelihood Estimates of Model Parameters" 
+frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=9 scope=colgroup>Analysis of Maximum 
+      Likelihood Estimates</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Parameter</TH>
+    <TH class="l b header" scope=col>&nbsp;</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>Parameter<BR>Estimate</TH>
+    <TH class="r b header" scope=col>Standard<BR>Error</TH>
+    <TH class="r b header" scope=col>Chi-Square</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;ChiSq</TH>
+    <TH class="r b header" scope=col>Hazard<BR>Ratio</TH>
+    <TH class="l b header" scope=col>Label</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>age</TH>
+    <TH class="l rowheader" scope=row>&nbsp;</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data" noWrap>-0.04336</TD>
+    <TD class="r data">0.01368</TD>
+    <TD class="r data">10.0430</TD>
+    <TD class="r data">0.0015</TD>
+    <TD class="r data">0.958</TD>
+    <TD class="l data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>income</TH>
+    <TH class="l rowheader" scope=row>&nbsp;</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data" noWrap>-0.00588</TD>
+    <TD class="r data">0.00203</TD>
+    <TD class="r data">8.3567</TD>
+    <TD class="r data">0.0038</TD>
+    <TD class="r data">0.994</TD>
+    <TD class="l data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>mixed2</TH>
+    <TH class="l rowheader" scope=row>&nbsp;</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">0.22655</TD>
+    <TD class="r data">0.07924</TD>
+    <TD class="r data">8.1750</TD>
+    <TD class="r data">0.0042</TD>
+    <TD class="r data">1.254</TD>
+    <TD class="l data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>hubeduc</TH>
+    <TH class="l rowheader" scope=row>0</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data" noWrap>-0.33250</TD>
+    <TD class="r data">0.06985</TD>
+    <TD class="r data">22.6613</TD>
+    <TD class="r data">&lt;.0001</TD>
+    <TD class="r data">0.717</TD>
+    <TD class="l data">hubeduc 0</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>hubeduc</TH>
+    <TH class="l rowheader" scope=row>2</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data" noWrap>-0.20147</TD>
+    <TD class="r data">0.10811</TD>
+    <TD class="r data">3.4730</TD>
+    <TD class="r data">0.0624</TD>
+    <TD class="r data">0.818</TD>
+    <TD class="l data">hubeduc 2</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>hubblack</TH>
+    <TH class="l rowheader" scope=row>&nbsp;</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">0.16568</TD>
+    <TD class="r data">0.07987</TD>
+    <TD class="r data">4.3032</TD>
+    <TD class="r data">0.0380</TD>
+    <TD class="r data">1.180</TD>
+    <TD class="l data">&nbsp;</TD></TR></TBODY></TABLE></DIV></DIV><BR></DIV>
+<DIV class=branch>
+<P style="PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3>
+<A name=IDX9></A>
+<TABLE class=systitleandfootercontainer cellSpacing=1 cellPadding=1 rules=none 
+width="100%" summary="Page Layout" border=0 frame=void>
+  <TBODY>
+  <TR>
+    <TD class="c systemtitle">The SAS System</TD></TR></TBODY></TABLE><BR>
+<DIV class="c proctitle">The PHREG Procedure</DIV>
+<P>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Model Information" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=2 scope=colgroup>Model 
+  Information</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Data Set</TH>
+    <TD class="l data">F532.FINAL2</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Dependent Variable</TH>
+    <TD class="l data">years</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Censoring Variable</TH>
+    <TD class="l data">divorce</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Censoring Value(s)</TH>
+    <TD class="l data">0</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Ties Handling</TH>
+    <TD class="l data">BRESLOW</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX10></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Number of Observations" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <TBODY>
+  <TR>
+    <TH class="l stacked_cell rowheader" scope=row>
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="l rowheader top_stacked_value" scope=row>Number of 
+            Observations Read</TD></TR>
+        <TR>
+          <TD class="l rowheader bottom_stacked_value" scope=row>Number of 
+            Observations Used</TD></TR></TBODY></TABLE></TH>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">3371</TD></TR>
+        <TR>
+          <TD 
+  class="r data bottom_stacked_value">3371</TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX11></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Class Level Information" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=4 scope=colgroup>Class Level 
+  Information</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Class</TH>
+    <TH class="l b header" scope=col>Value</TH>
+    <TH class="c b header" colSpan=2 scope=colgroup>Design 
+  Variables</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>hubeduc</TH>
+    <TH class="l rowheader" scope=row>0</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">0</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>&nbsp;</TH>
+    <TH class="l rowheader" scope=row>1</TH>
+    <TD class="r data">0</TD>
+    <TD class="r data">0</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>&nbsp;</TH>
+    <TH class="l rowheader" scope=row>2</TH>
+    <TD class="r data">0</TD>
+    <TD class="r data">1</TD></TR></TBODY></TABLE></DIV></DIV><BR><A name=IDX12></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Summary of Event and Censored Observations" 
+  frame=box><COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=4 scope=colgroup>Summary of the Number of 
+      Event and Censored<BR>Values</TH></TR>
+  <TR>
+    <TH class="r b header" scope=col>Total</TH>
+    <TH class="r b header" scope=col>Event</TH>
+    <TH class="r b header" scope=col>Censored</TH>
+    <TH class="r b header" scope=col>Percent<BR>Censored</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="r data">3371</TD>
+    <TD class="r data">1032</TD>
+    <TD class="r data">2339</TD>
+    <TD class="r data">69.39</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX13></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Convergence Status" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" scope=col>Convergence Status</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="c data">Convergence criterion (GCONV=1E-8) 
+  satisfied.</TD></TR></TBODY></TABLE></DIV></DIV><BR><A name=IDX14></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Model Fit Statistics" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=3 scope=colgroup>Model Fit Statistics</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Criterion</TH>
+    <TH class="r b header" scope=col>Without<BR>Covariates</TH>
+    <TH class="r b header" scope=col>With<BR>Covariates</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>-2 LOG L</TH>
+    <TD class="r data">15688.784</TD>
+    <TD class="r data">15635.015</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>AIC</TH>
+    <TD class="r data">15688.784</TD>
+    <TD class="r data">15647.015</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>SBC</TH>
+    <TD class="r data">15688.784</TD>
+    <TD class="r data">15676.651</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX15></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Test of Global Null Hypothesis" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=4 scope=colgroup>Testing Global Null 
+      Hypothesis: BETA=0</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Test</TH>
+    <TH class="r b header" scope=col>Chi-Square</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;ChiSq</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Likelihood Ratio</TH>
+    <TD class="r data">53.7687</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Score</TH>
+    <TD class="r data">55.3221</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Wald</TH>
+    <TD class="r data">55.1309</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">&lt;.0001</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX16></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Type 3 Chi-Square Tests" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=4 scope=colgroup>Type 3 Tests</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Effect</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>Wald Chi-Square</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;ChiSq</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>age</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">10.0430</TD>
+    <TD class="r data">0.0015</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>income</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">8.3567</TD>
+    <TD class="r data">0.0038</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>mixed2</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">8.1750</TD>
+    <TD class="r data">0.0042</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>hubeduc</TH>
+    <TD class="r data">2</TD>
+    <TD class="r data">23.6587</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>hubblack</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">4.3032</TD>
+    <TD class="r data">0.0380</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX17></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Maximum Likelihood Estimates of Model Parameters" 
+frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=9 scope=colgroup>Analysis of Maximum 
+      Likelihood Estimates</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Parameter</TH>
+    <TH class="l b header" scope=col>&nbsp;</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>Parameter<BR>Estimate</TH>
+    <TH class="r b header" scope=col>Standard<BR>Error</TH>
+    <TH class="r b header" scope=col>Chi-Square</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;ChiSq</TH>
+    <TH class="r b header" scope=col>Hazard<BR>Ratio</TH>
+    <TH class="l b header" scope=col>Label</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>age</TH>
+    <TH class="l rowheader" scope=row>&nbsp;</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data" noWrap>-0.04336</TD>
+    <TD class="r data">0.01368</TD>
+    <TD class="r data">10.0430</TD>
+    <TD class="r data">0.0015</TD>
+    <TD class="r data">0.958</TD>
+    <TD class="l data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>income</TH>
+    <TH class="l rowheader" scope=row>&nbsp;</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data" noWrap>-0.00588</TD>
+    <TD class="r data">0.00203</TD>
+    <TD class="r data">8.3567</TD>
+    <TD class="r data">0.0038</TD>
+    <TD class="r data">0.994</TD>
+    <TD class="l data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>mixed2</TH>
+    <TH class="l rowheader" scope=row>&nbsp;</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">0.22655</TD>
+    <TD class="r data">0.07924</TD>
+    <TD class="r data">8.1750</TD>
+    <TD class="r data">0.0042</TD>
+    <TD class="r data">1.254</TD>
+    <TD class="l data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>hubeduc</TH>
+    <TH class="l rowheader" scope=row>0</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data" noWrap>-0.33250</TD>
+    <TD class="r data">0.06985</TD>
+    <TD class="r data">22.6613</TD>
+    <TD class="r data">&lt;.0001</TD>
+    <TD class="r data">0.717</TD>
+    <TD class="l data">hubeduc 0</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>hubeduc</TH>
+    <TH class="l rowheader" scope=row>2</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data" noWrap>-0.20147</TD>
+    <TD class="r data">0.10811</TD>
+    <TD class="r data">3.4730</TD>
+    <TD class="r data">0.0624</TD>
+    <TD class="r data">0.818</TD>
+    <TD class="l data">hubeduc 2</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>hubblack</TH>
+    <TH class="l rowheader" scope=row>&nbsp;</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">0.16568</TD>
+    <TD class="r data">0.07987</TD>
+    <TD class="r data">4.3032</TD>
+    <TD class="r data">0.0380</TD>
+    <TD class="r data">1.180</TD>
+    <TD class="l data">&nbsp;</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX18></A>
+<DIV>
+<DIV class=c><IMG class=c style="HEIGHT: 480px; WIDTH: 640px" border=0 
+alt="Standardized Score Process Plot" 
+src="SAS%20Output_cox_files/ScoreProcess.png"> </DIV></DIV><BR><A 
+name=IDX19></A>
+<DIV>
+<DIV class=c><IMG class=c style="HEIGHT: 480px; WIDTH: 640px" border=0 
+alt="Standardized Score Process Plot" 
+src="SAS%20Output_cox_files/ScoreProcess1.png"> </DIV></DIV><BR><A 
+name=IDX20></A>
+<DIV>
+<DIV class=c><IMG class=c style="HEIGHT: 480px; WIDTH: 640px" border=0 
+alt="Standardized Score Process Plot" 
+src="SAS%20Output_cox_files/ScoreProcess2.png"> </DIV></DIV><BR><A 
+name=IDX21></A>
+<DIV>
+<DIV class=c><IMG class=c style="HEIGHT: 480px; WIDTH: 640px" border=0 
+alt="Standardized Score Process Plot" 
+src="SAS%20Output_cox_files/ScoreProcess3.png"> </DIV></DIV><BR><A 
+name=IDX22></A>
+<DIV>
+<DIV class=c><IMG class=c style="HEIGHT: 480px; WIDTH: 640px" border=0 
+alt="Standardized Score Process Plot" 
+src="SAS%20Output_cox_files/ScoreProcess4.png"> </DIV></DIV><BR><A 
+name=IDX23></A>
+<DIV>
+<DIV class=c><IMG class=c style="HEIGHT: 480px; WIDTH: 640px" border=0 
+alt="Standardized Score Process Plot" 
+src="SAS%20Output_cox_files/ScoreProcess5.png"> </DIV></DIV><BR><A 
+name=IDX24></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Supremum Test for Proportional Hazards Assumption" 
+frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=5 scope=colgroup>Supremum Test for 
+      Proportionals Hazards Assumption</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Variable</TH>
+    <TH class="r b header" scope=col>Maximum Absolute<BR>Value</TH>
+    <TH class="r b header" scope=col>Replications</TH>
+    <TH class="r b header" scope=col>Seed</TH>
+    <TH class="r b header" scope=col>Pr &gt; <BR>MaxAbsVal</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l data">age</TH>
+    <TD class="r data">0.6445</TD>
+    <TD class="r data">1000</TD>
+    <TD class="r data">965873000</TD>
+    <TD class="r data">0.2850</TD></TR>
+  <TR>
+    <TH class="l data">income</TH>
+    <TD class="r data">0.5864</TD>
+    <TD class="r data">1000</TD>
+    <TD class="r data">965873000</TD>
+    <TD class="r data">0.8760</TD></TR>
+  <TR>
+    <TH class="l data">mixed2</TH>
+    <TD class="r data">0.9762</TD>
+    <TD class="r data">1000</TD>
+    <TD class="r data">965873000</TD>
+    <TD class="r data">0.3460</TD></TR>
+  <TR>
+    <TH class="l data">hubeduc0</TH>
+    <TD class="r data">1.3745</TD>
+    <TD class="r data">1000</TD>
+    <TD class="r data">965873000</TD>
+    <TD class="r data">0.0670</TD></TR>
+  <TR>
+    <TH class="l data">hubeduc2</TH>
+    <TD class="r data">0.8270</TD>
+    <TD class="r data">1000</TD>
+    <TD class="r data">965873000</TD>
+    <TD class="r data">0.5670</TD></TR>
+  <TR>
+    <TH class="l data">hubblack</TH>
+    <TD class="r data">1.1894</TD>
+    <TD class="r data">1000</TD>
+    <TD class="r data">965873000</TD>
+    <TD class="r data">0.1360</TD></TR></TBODY></TABLE></DIV></DIV><BR></DIV>
+<DIV class=branch>
+<P style="PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3>
+<A name=IDX25></A>
+<TABLE class=systitleandfootercontainer cellSpacing=1 cellPadding=1 rules=none 
+width="100%" summary="Page Layout" border=0 frame=void>
+  <TBODY>
+  <TR>
+    <TD class="c systemtitle">The SAS System</TD></TR></TBODY></TABLE><BR>
+<DIV class="c proctitle">The CORR Procedure</DIV>
+<P>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Corr: Variables Information" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>1 With Variables:</TH>
+    <TD class="l data">years</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>5 Variables:</TH>
+    <TD class="l data">sch_age sch_income sch_mixed sch_educ 
+  sch_black</TD></TR></TBODY></TABLE></DIV></DIV><BR><A name=IDX26></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Corr: Simple Statistics" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=8 scope=colgroup>Simple Statistics</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Variable</TH>
+    <TH class="r b header" scope=col>N</TH>
+    <TH class="r b header" scope=col>Mean</TH>
+    <TH class="r b header" scope=col>Std Dev</TH>
+    <TH class="r b header" scope=col>Sum</TH>
+    <TH class="r b header" scope=col>Minimum</TH>
+    <TH class="r b header" scope=col>Maximum</TH>
+    <TH class="l b header" scope=col>Label</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>years</TH>
+    <TD class="r data">3371</TD>
+    <TD class="r data">18.41009</TD>
+    <TD class="r data">14.90119</TD>
+    <TD class="r data">62060</TD>
+    <TD class="r data">0.07900</TD>
+    <TD class="r data">73.06800</TD>
+    <TD class="l data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>sch_age</TH>
+    <TD class="r data">1032</TD>
+    <TD class="r data">0.0000106</TD>
+    <TD class="r data">1.54352</TD>
+    <TD class="r data">0.01094</TD>
+    <TD class="r data" noWrap>-5.10505</TD>
+    <TD class="r data">5.95177</TD>
+    <TD class="l data">Schoenfeld Residual for age</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>sch_income</TH>
+    <TD class="r data">1032</TD>
+    <TD class="r data">0.0001306</TD>
+    <TD class="r data">15.76962</TD>
+    <TD class="r data">0.13476</TD>
+    <TD class="r data" noWrap>-45.95595</TD>
+    <TD class="r data">52.00496</TD>
+    <TD class="l data">Schoenfeld Residual for income</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>sch_mixed</TH>
+    <TD class="r data">1032</TD>
+    <TD class="r data" noWrap>-0.0000245</TD>
+    <TD class="r data">0.41966</TD>
+    <TD class="r data" noWrap>-0.02530</TD>
+    <TD class="r data" noWrap>-0.24244</TD>
+    <TD class="r data">0.82348</TD>
+    <TD class="l data">Schoenfeld Residual for mixed2</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>sch_educ</TH>
+    <TD class="r data">1032</TD>
+    <TD class="r data" noWrap>-3.4613E-6</TD>
+    <TD class="r data">0.48344</TD>
+    <TD class="r data" noWrap>-0.00357</TD>
+    <TD class="r data" noWrap>-0.58043</TD>
+    <TD class="r data">0.66244</TD>
+    <TD class="l data">Schoenfeld Residual for hubeduc0</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>sch_black</TH>
+    <TD class="r data">1032</TD>
+    <TD class="r data" noWrap>4.86407E-6</TD>
+    <TD class="r data">0.30879</TD>
+    <TD class="r data">0.00502</TD>
+    <TD class="r data" noWrap>-0.11148</TD>
+    <TD class="r data">0.91548</TD>
+    <TD class="l data">Schoenfeld Residual for 
+hubeduc2</TD></TR></TBODY></TABLE></DIV></DIV><BR><A name=IDX27></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Corr: Pearson Correlations" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=6 scope=colgroup>Pearson Correlation 
+      Coefficients <BR>Prob &gt; |r| under H0: Rho=0 <BR>Number of 
+    Observations</TH></TR>
+  <TR>
+    <TH class="c headerempty" scope=col>&nbsp;</TH>
+    <TH class="r b header" scope=col>sch_age</TH>
+    <TH class="r b header" scope=col>sch_income</TH>
+    <TH class="r b header" scope=col>sch_mixed</TH>
+    <TH class="r b header" scope=col>sch_educ</TH>
+    <TH class="r b header" scope=col>sch_black</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>years</TH>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value" noWrap>-0.03443</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value">0.2691</TD></TR>
+        <TR>
+          <TD class="r data bottom_stacked_value">1032</TD></TR></TBODY></TABLE></TD>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value" noWrap>-0.01407</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value">0.6516</TD></TR>
+        <TR>
+          <TD class="r data bottom_stacked_value">1032</TD></TR></TBODY></TABLE></TD>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">0.02294</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value">0.4616</TD></TR>
+        <TR>
+          <TD class="r data bottom_stacked_value">1032</TD></TR></TBODY></TABLE></TD>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value" noWrap>-0.01048</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value">0.7367</TD></TR>
+        <TR>
+          <TD class="r data bottom_stacked_value">1032</TD></TR></TBODY></TABLE></TD>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">0.02999</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value">0.3359</TD></TR>
+        <TR>
+          <TD 
+  class="r data bottom_stacked_value">1032</TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></DIV></DIV><BR></DIV>
+<DIV class=branch>
+<P style="PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3>
+<A name=IDX28></A>
+<TABLE class=systitleandfootercontainer cellSpacing=1 cellPadding=1 rules=none 
+width="100%" summary="Page Layout" border=0 frame=void>
+  <TBODY>
+  <TR>
+    <TD class="c systemtitle">The SAS System</TD></TR></TBODY></TABLE><BR>
+<DIV class="c proctitle">The PHREG Procedure</DIV>
+<P>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Model Information" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=2 scope=colgroup>Model 
+  Information</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Data Set</TH>
+    <TD class="l data">F532.FINAL2</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Dependent Variable</TH>
+    <TD class="l data">years</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Censoring Variable</TH>
+    <TD class="l data">divorce</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Censoring Value(s)</TH>
+    <TD class="l data">0</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Ties Handling</TH>
+    <TD class="l data">BRESLOW</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX29></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Number of Observations" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <TBODY>
+  <TR>
+    <TH class="l stacked_cell rowheader" scope=row>
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="l rowheader top_stacked_value" scope=row>Number of 
+            Observations Read</TD></TR>
+        <TR>
+          <TD class="l rowheader bottom_stacked_value" scope=row>Number of 
+            Observations Used</TD></TR></TBODY></TABLE></TH>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">3371</TD></TR>
+        <TR>
+          <TD 
+  class="r data bottom_stacked_value">3371</TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX30></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Class Level Information" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=4 scope=colgroup>Class Level 
+  Information</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Class</TH>
+    <TH class="l b header" scope=col>Value</TH>
+    <TH class="c b header" colSpan=2 scope=colgroup>Design 
+  Variables</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>hubeduc</TH>
+    <TH class="l rowheader" scope=row>0</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">0</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>&nbsp;</TH>
+    <TH class="l rowheader" scope=row>1</TH>
+    <TD class="r data">0</TD>
+    <TD class="r data">1</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>&nbsp;</TH>
+    <TH class="l rowheader" scope=row>2</TH>
+    <TD class="r data">0</TD>
+    <TD class="r data">0</TD></TR></TBODY></TABLE></DIV></DIV><BR><A name=IDX31></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Summary of Event and Censored Observations" 
+  frame=box><COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=4 scope=colgroup>Summary of the Number of 
+      Event and Censored<BR>Values</TH></TR>
+  <TR>
+    <TH class="r b header" scope=col>Total</TH>
+    <TH class="r b header" scope=col>Event</TH>
+    <TH class="r b header" scope=col>Censored</TH>
+    <TH class="r b header" scope=col>Percent<BR>Censored</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="r data">3371</TD>
+    <TD class="r data">1032</TD>
+    <TD class="r data">2339</TD>
+    <TD class="r data">69.39</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX32></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Convergence Status" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" scope=col>Convergence Status</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="c data">Convergence criterion (GCONV=1E-8) 
+  satisfied.</TD></TR></TBODY></TABLE></DIV></DIV><BR><A name=IDX33></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Model Fit Statistics" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=3 scope=colgroup>Model Fit Statistics</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Criterion</TH>
+    <TH class="r b header" scope=col>Without<BR>Covariates</TH>
+    <TH class="r b header" scope=col>With<BR>Covariates</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>-2 LOG L</TH>
+    <TD class="r data">15688.784</TD>
+    <TD class="r data">15628.053</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>AIC</TH>
+    <TD class="r data">15688.784</TD>
+    <TD class="r data">15650.053</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>SBC</TH>
+    <TD class="r data">15688.784</TD>
+    <TD class="r data">15704.385</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX34></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Test of Global Null Hypothesis" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=4 scope=colgroup>Testing Global Null 
+      Hypothesis: BETA=0</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Test</TH>
+    <TH class="r b header" scope=col>Chi-Square</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;ChiSq</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Likelihood Ratio</TH>
+    <TD class="r data">60.7308</TD>
+    <TD class="r data">11</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Score</TH>
+    <TD class="r data">63.2433</TD>
+    <TD class="r data">11</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Wald</TH>
+    <TD class="r data">62.8858</TD>
+    <TD class="r data">11</TD>
+    <TD class="r data">&lt;.0001</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX35></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Type 3 Chi-Square Tests" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=4 scope=colgroup>Type 3 Tests</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Effect</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>Wald Chi-Square</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;ChiSq</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>age</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">2.1265</TD>
+    <TD class="r data">0.1448</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>income</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">1.4689</TD>
+    <TD class="r data">0.2255</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>mixed2</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">2.4063</TD>
+    <TD class="r data">0.1208</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>hubeduc</TH>
+    <TD class="r data">2</TD>
+    <TD class="r data">15.7112</TD>
+    <TD class="r data">0.0004</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>hubblack</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">0.1435</TD>
+    <TD class="r data">0.7048</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>age_time</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">0.2845</TD>
+    <TD class="r data">0.5937</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>income_time</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">0.4488</TD>
+    <TD class="r data">0.5029</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>mixed_time</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">0.0362</TD>
+    <TD class="r data">0.8491</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>black_time</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">4.7564</TD>
+    <TD class="r data">0.0292</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>educ_time</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">1.9209</TD>
+    <TD class="r data">0.1658</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX36></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Maximum Likelihood Estimates of Model Parameters" 
+frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=9 scope=colgroup>Analysis of Maximum 
+      Likelihood Estimates</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Parameter</TH>
+    <TH class="l b header" scope=col>&nbsp;</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>Parameter<BR>Estimate</TH>
+    <TH class="r b header" scope=col>Standard<BR>Error</TH>
+    <TH class="r b header" scope=col>Chi-Square</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;ChiSq</TH>
+    <TH class="r b header" scope=col>Hazard<BR>Ratio</TH>
+    <TH class="l b header" scope=col>Label</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>age</TH>
+    <TH class="l rowheader" scope=row>&nbsp;</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data" noWrap>-0.03287</TD>
+    <TD class="r data">0.02254</TD>
+    <TD class="r data">2.1265</TD>
+    <TD class="r data">0.1448</TD>
+    <TD class="r data">0.968</TD>
+    <TD class="l data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>income</TH>
+    <TH class="l rowheader" scope=row>&nbsp;</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data" noWrap>-0.00403</TD>
+    <TD class="r data">0.00332</TD>
+    <TD class="r data">1.4689</TD>
+    <TD class="r data">0.2255</TD>
+    <TD class="r data">0.996</TD>
+    <TD class="l data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>mixed2</TH>
+    <TH class="l rowheader" scope=row>&nbsp;</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">0.20096</TD>
+    <TD class="r data">0.12955</TD>
+    <TD class="r data">2.4063</TD>
+    <TD class="r data">0.1208</TD>
+    <TD class="r data">1.223</TD>
+    <TD class="l data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>hubeduc</TH>
+    <TH class="l rowheader" scope=row>0</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">0.05531</TD>
+    <TD class="r data">0.18159</TD>
+    <TD class="r data">0.0928</TD>
+    <TD class="r data">0.7607</TD>
+    <TD class="r data">1.057</TD>
+    <TD class="l data">hubeduc 0</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>hubeduc</TH>
+    <TH class="l rowheader" scope=row>1</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">0.29833</TD>
+    <TD class="r data">0.12847</TD>
+    <TD class="r data">5.3921</TD>
+    <TD class="r data">0.0202</TD>
+    <TD class="r data">1.348</TD>
+    <TD class="l data">hubeduc 1</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>hubblack</TH>
+    <TH class="l rowheader" scope=row>&nbsp;</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data" noWrap>-0.04885</TD>
+    <TD class="r data">0.12894</TD>
+    <TD class="r data">0.1435</TD>
+    <TD class="r data">0.7048</TD>
+    <TD class="r data">0.952</TD>
+    <TD class="l data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>age_time</TH>
+    <TH class="l rowheader" scope=row>&nbsp;</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data" noWrap>-0.0008662</TD>
+    <TD class="r data">0.00162</TD>
+    <TD class="r data">0.2845</TD>
+    <TD class="r data">0.5937</TD>
+    <TD class="r data">0.999</TD>
+    <TD class="l data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>income_time</TH>
+    <TH class="l rowheader" scope=row>&nbsp;</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data" noWrap>-0.0001639</TD>
+    <TD class="r data">0.0002446</TD>
+    <TD class="r data">0.4488</TD>
+    <TD class="r data">0.5029</TD>
+    <TD class="r data">1.000</TD>
+    <TD class="l data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>mixed_time</TH>
+    <TH class="l rowheader" scope=row>&nbsp;</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">0.00185</TD>
+    <TD class="r data">0.00974</TD>
+    <TD class="r data">0.0362</TD>
+    <TD class="r data">0.8491</TD>
+    <TD class="r data">1.002</TD>
+    <TD class="l data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>black_time</TH>
+    <TH class="l rowheader" scope=row>&nbsp;</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">0.02148</TD>
+    <TD class="r data">0.00985</TD>
+    <TD class="r data">4.7564</TD>
+    <TD class="r data">0.0292</TD>
+    <TD class="r data">1.022</TD>
+    <TD class="l data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>educ_time</TH>
+    <TH class="l rowheader" scope=row>&nbsp;</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">0.00873</TD>
+    <TD class="r data">0.00630</TD>
+    <TD class="r data">1.9209</TD>
+    <TD class="r data">0.1658</TD>
+    <TD class="r data">1.009</TD>
+    <TD class="l data">&nbsp;</TD></TR></TBODY></TABLE></DIV></DIV><BR></DIV>
+<DIV class=branch>
+<P style="PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3>
+<A name=IDX37></A>
+<TABLE class=systitleandfootercontainer cellSpacing=1 cellPadding=1 rules=none 
+width="100%" summary="Page Layout" border=0 frame=void>
+  <TBODY>
+  <TR>
+    <TD class="c systemtitle">The SAS System</TD></TR></TBODY></TABLE><BR>
+<DIV class="c proctitle">The PHREG Procedure</DIV>
+<P>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Model Information" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=2 scope=colgroup>Model 
+  Information</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Data Set</TH>
+    <TD class="l data">F532.INTER3</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Dependent Variable</TH>
+    <TD class="l data">years</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Censoring Variable</TH>
+    <TD class="l data">divorce</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Censoring Value(s)</TH>
+    <TD class="l data">0</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Ties Handling</TH>
+    <TD class="l data">BRESLOW</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX38></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Number of Observations" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <TBODY>
+  <TR>
+    <TH class="l stacked_cell rowheader" scope=row>
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="l rowheader top_stacked_value" scope=row>Number of 
+            Observations Read</TD></TR>
+        <TR>
+          <TD class="l rowheader bottom_stacked_value" scope=row>Number of 
+            Observations Used</TD></TR></TBODY></TABLE></TH>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">3371</TD></TR>
+        <TR>
+          <TD 
+  class="r data bottom_stacked_value">3371</TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX39></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Summary of Event and Censored Observations" 
+  frame=box><COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=4 scope=colgroup>Summary of the Number of 
+      Event and Censored<BR>Values</TH></TR>
+  <TR>
+    <TH class="r b header" scope=col>Total</TH>
+    <TH class="r b header" scope=col>Event</TH>
+    <TH class="r b header" scope=col>Censored</TH>
+    <TH class="r b header" scope=col>Percent<BR>Censored</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="r data">3371</TD>
+    <TD class="r data">1032</TD>
+    <TD class="r data">2339</TD>
+    <TD class="r data">69.39</TD></TR></TBODY></TABLE></DIV></DIV><BR><BR>
+<P>
+<DIV align=left>
+<TABLE class=proctitle>
+  <TBODY>
+  <TR>
+    <TD class="l proctitle">The following effects are included in each 
+    model:</TD></TR></TBODY></TABLE></DIV>
+<P><BR>
+<P>
+<DIV align=left>
+<TABLE class=proctitle>
+  <TBODY>
+  <TR>
+    <TD class="l proctitle">agescaled income mixed2 hubeduc hubblack black_t 
+    </TD></TR></TBODY></TABLE></DIV>
+<P><BR>
+<P>
+<DIV align=left>
+<TABLE class=proctitle>
+  <TBODY>
+  <TR>
+    <TD class="l proctitle">Step 0. The model contains the following 
+    effects:</TD></TR></TBODY></TABLE></DIV>
+<P><BR>
+<P>
+<DIV align=left>
+<TABLE class=proctitle>
+  <TBODY>
+  <TR>
+    <TD class="l proctitle">agescaled income mixed2 hubeduc hubblack black_t 
+      blackelow blackemid mixedelow mixedemid agesc_elow agesc_emid income_elow 
+      income_emid black_mixed black_age black_income mixed_agesc mixed_income 
+      agesc_income agescaled2 agescaled3 income2 income3 
+</TD></TR></TBODY></TABLE></DIV>
+<P><A name=IDX40></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Convergence Status" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" scope=col>Convergence Status</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="c data">Convergence criterion (GCONV=1E-8) 
+  satisfied.</TD></TR></TBODY></TABLE></DIV></DIV><BR><A name=IDX41></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Model Fit Statistics" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=3 scope=colgroup>Model Fit Statistics</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Criterion</TH>
+    <TH class="r b header" scope=col>Without<BR>Covariates</TH>
+    <TH class="r b header" scope=col>With<BR>Covariates</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>-2 LOG L</TH>
+    <TD class="r data">15688.784</TD>
+    <TD class="r data">15357.106</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>AIC</TH>
+    <TD class="r data">15688.784</TD>
+    <TD class="r data">15405.106</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>SBC</TH>
+    <TD class="r data">15688.784</TD>
+    <TD class="r data">15523.648</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX42></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Test of Global Null Hypothesis" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=4 scope=colgroup>Testing Global Null 
+      Hypothesis: BETA=0</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Test</TH>
+    <TH class="r b header" scope=col>Chi-Square</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;ChiSq</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Likelihood Ratio</TH>
+    <TD class="r data">331.6778</TD>
+    <TD class="r data">24</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Score</TH>
+    <TD class="r data">236.9449</TD>
+    <TD class="r data">24</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Wald</TH>
+    <TD class="r data">224.8706</TD>
+    <TD class="r data">24</TD>
+    <TD class="r data">&lt;.0001</TD></TR></TBODY></TABLE></DIV></DIV><BR><BR>
+<P>
+<DIV align=left>
+<TABLE class=proctitle>
+  <TBODY>
+  <TR>
+    <TD class="l proctitle">Step 1. Effect mixedemid is removed. The model 
+      contains the following effects:</TD></TR></TBODY></TABLE></DIV>
+<P><BR>
+<P>
+<DIV align=left>
+<TABLE class=proctitle>
+  <TBODY>
+  <TR>
+    <TD class="l proctitle">agescaled income mixed2 hubeduc hubblack black_t 
+      blackelow blackemid mixedelow agesc_elow agesc_emid income_elow 
+      income_emid black_mixed black_age black_income mixed_agesc mixed_income 
+      agesc_income agescaled2 agescaled3 income2 income3 
+</TD></TR></TBODY></TABLE></DIV>
+<P><A name=IDX43></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Convergence Status" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" scope=col>Convergence Status</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="c data">Convergence criterion (GCONV=1E-8) 
+  satisfied.</TD></TR></TBODY></TABLE></DIV></DIV><BR><A name=IDX44></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Model Fit Statistics" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=3 scope=colgroup>Model Fit Statistics</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Criterion</TH>
+    <TH class="r b header" scope=col>Without<BR>Covariates</TH>
+    <TH class="r b header" scope=col>With<BR>Covariates</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>-2 LOG L</TH>
+    <TD class="r data">15688.784</TD>
+    <TD class="r data">15357.124</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>AIC</TH>
+    <TD class="r data">15688.784</TD>
+    <TD class="r data">15403.124</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>SBC</TH>
+    <TD class="r data">15688.784</TD>
+    <TD class="r data">15516.726</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX45></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Test of Global Null Hypothesis" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=4 scope=colgroup>Testing Global Null 
+      Hypothesis: BETA=0</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Test</TH>
+    <TH class="r b header" scope=col>Chi-Square</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;ChiSq</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Likelihood Ratio</TH>
+    <TD class="r data">331.6603</TD>
+    <TD class="r data">23</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Score</TH>
+    <TD class="r data">236.8862</TD>
+    <TD class="r data">23</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Wald</TH>
+    <TD class="r data">224.8499</TD>
+    <TD class="r data">23</TD>
+    <TD class="r data">&lt;.0001</TD></TR></TBODY></TABLE></DIV></DIV><BR><BR>
+<P>
+<DIV align=left>
+<TABLE class=proctitle>
+  <TBODY>
+  <TR>
+    <TD class="l proctitle">Step 2. Effect black_mixed is removed. The model 
+      contains the following effects:</TD></TR></TBODY></TABLE></DIV>
+<P><BR>
+<P>
+<DIV align=left>
+<TABLE class=proctitle>
+  <TBODY>
+  <TR>
+    <TD class="l proctitle">agescaled income mixed2 hubeduc hubblack black_t 
+      blackelow blackemid mixedelow agesc_elow agesc_emid income_elow 
+      income_emid black_age black_income mixed_agesc mixed_income agesc_income 
+      agescaled2 agescaled3 income2 income3 </TD></TR></TBODY></TABLE></DIV>
+<P><A name=IDX46></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Convergence Status" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" scope=col>Convergence Status</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="c data">Convergence criterion (GCONV=1E-8) 
+  satisfied.</TD></TR></TBODY></TABLE></DIV></DIV><BR><A name=IDX47></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Model Fit Statistics" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=3 scope=colgroup>Model Fit Statistics</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Criterion</TH>
+    <TH class="r b header" scope=col>Without<BR>Covariates</TH>
+    <TH class="r b header" scope=col>With<BR>Covariates</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>-2 LOG L</TH>
+    <TD class="r data">15688.784</TD>
+    <TD class="r data">15357.163</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>AIC</TH>
+    <TD class="r data">15688.784</TD>
+    <TD class="r data">15401.163</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>SBC</TH>
+    <TD class="r data">15688.784</TD>
+    <TD class="r data">15509.826</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX48></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Test of Global Null Hypothesis" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=4 scope=colgroup>Testing Global Null 
+      Hypothesis: BETA=0</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Test</TH>
+    <TH class="r b header" scope=col>Chi-Square</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;ChiSq</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Likelihood Ratio</TH>
+    <TD class="r data">331.6213</TD>
+    <TD class="r data">22</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Score</TH>
+    <TD class="r data">236.6788</TD>
+    <TD class="r data">22</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Wald</TH>
+    <TD class="r data">224.6839</TD>
+    <TD class="r data">22</TD>
+    <TD class="r data">&lt;.0001</TD></TR></TBODY></TABLE></DIV></DIV><BR><BR>
+<P>
+<DIV align=left>
+<TABLE class=proctitle>
+  <TBODY>
+  <TR>
+    <TD class="l proctitle">Step 3. Effect agesc_emid is removed. The model 
+      contains the following effects:</TD></TR></TBODY></TABLE></DIV>
+<P><BR>
+<P>
+<DIV align=left>
+<TABLE class=proctitle>
+  <TBODY>
+  <TR>
+    <TD class="l proctitle">agescaled income mixed2 hubeduc hubblack black_t 
+      blackelow blackemid mixedelow agesc_elow income_elow income_emid black_age 
+      black_income mixed_agesc mixed_income agesc_income agescaled2 agescaled3 
+      income2 income3 </TD></TR></TBODY></TABLE></DIV>
+<P><A name=IDX49></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Convergence Status" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" scope=col>Convergence Status</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="c data">Convergence criterion (GCONV=1E-8) 
+  satisfied.</TD></TR></TBODY></TABLE></DIV></DIV><BR><A name=IDX50></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Model Fit Statistics" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=3 scope=colgroup>Model Fit Statistics</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Criterion</TH>
+    <TH class="r b header" scope=col>Without<BR>Covariates</TH>
+    <TH class="r b header" scope=col>With<BR>Covariates</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>-2 LOG L</TH>
+    <TD class="r data">15688.784</TD>
+    <TD class="r data">15357.232</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>AIC</TH>
+    <TD class="r data">15688.784</TD>
+    <TD class="r data">15399.232</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>SBC</TH>
+    <TD class="r data">15688.784</TD>
+    <TD class="r data">15502.956</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX51></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Test of Global Null Hypothesis" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=4 scope=colgroup>Testing Global Null 
+      Hypothesis: BETA=0</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Test</TH>
+    <TH class="r b header" scope=col>Chi-Square</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;ChiSq</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Likelihood Ratio</TH>
+    <TD class="r data">331.5520</TD>
+    <TD class="r data">21</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Score</TH>
+    <TD class="r data">236.6783</TD>
+    <TD class="r data">21</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Wald</TH>
+    <TD class="r data">224.5383</TD>
+    <TD class="r data">21</TD>
+    <TD class="r data">&lt;.0001</TD></TR></TBODY></TABLE></DIV></DIV><BR><BR>
+<P>
+<DIV align=left>
+<TABLE class=proctitle>
+  <TBODY>
+  <TR>
+    <TD class="l proctitle">Step 4. Effect black_age is removed. The model 
+      contains the following effects:</TD></TR></TBODY></TABLE></DIV>
+<P><BR>
+<P>
+<DIV align=left>
+<TABLE class=proctitle>
+  <TBODY>
+  <TR>
+    <TD class="l proctitle">agescaled income mixed2 hubeduc hubblack black_t 
+      blackelow blackemid mixedelow agesc_elow income_elow income_emid 
+      black_income mixed_agesc mixed_income agesc_income agescaled2 agescaled3 
+      income2 income3 </TD></TR></TBODY></TABLE></DIV>
+<P><A name=IDX52></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Convergence Status" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" scope=col>Convergence Status</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="c data">Convergence criterion (GCONV=1E-8) 
+  satisfied.</TD></TR></TBODY></TABLE></DIV></DIV><BR><A name=IDX53></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Model Fit Statistics" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=3 scope=colgroup>Model Fit Statistics</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Criterion</TH>
+    <TH class="r b header" scope=col>Without<BR>Covariates</TH>
+    <TH class="r b header" scope=col>With<BR>Covariates</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>-2 LOG L</TH>
+    <TD class="r data">15688.784</TD>
+    <TD class="r data">15357.375</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>AIC</TH>
+    <TD class="r data">15688.784</TD>
+    <TD class="r data">15397.375</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>SBC</TH>
+    <TD class="r data">15688.784</TD>
+    <TD class="r data">15496.160</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX54></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Test of Global Null Hypothesis" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=4 scope=colgroup>Testing Global Null 
+      Hypothesis: BETA=0</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Test</TH>
+    <TH class="r b header" scope=col>Chi-Square</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;ChiSq</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Likelihood Ratio</TH>
+    <TD class="r data">331.4090</TD>
+    <TD class="r data">20</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Score</TH>
+    <TD class="r data">236.5503</TD>
+    <TD class="r data">20</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Wald</TH>
+    <TD class="r data">224.4549</TD>
+    <TD class="r data">20</TD>
+    <TD class="r data">&lt;.0001</TD></TR></TBODY></TABLE></DIV></DIV><BR><BR>
+<P>
+<DIV align=left>
+<TABLE class=proctitle>
+  <TBODY>
+  <TR>
+    <TD class="l proctitle">Step 5. Effect income2 is removed. The model 
+      contains the following effects:</TD></TR></TBODY></TABLE></DIV>
+<P><BR>
+<P>
+<DIV align=left>
+<TABLE class=proctitle>
+  <TBODY>
+  <TR>
+    <TD class="l proctitle">agescaled income mixed2 hubeduc hubblack black_t 
+      blackelow blackemid mixedelow agesc_elow income_elow income_emid 
+      black_income mixed_agesc mixed_income agesc_income agescaled2 agescaled3 
+      income3 </TD></TR></TBODY></TABLE></DIV>
+<P><A name=IDX55></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Convergence Status" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" scope=col>Convergence Status</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="c data">Convergence criterion (GCONV=1E-8) 
+  satisfied.</TD></TR></TBODY></TABLE></DIV></DIV><BR><A name=IDX56></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Model Fit Statistics" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=3 scope=colgroup>Model Fit Statistics</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Criterion</TH>
+    <TH class="r b header" scope=col>Without<BR>Covariates</TH>
+    <TH class="r b header" scope=col>With<BR>Covariates</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>-2 LOG L</TH>
+    <TD class="r data">15688.784</TD>
+    <TD class="r data">15357.570</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>AIC</TH>
+    <TD class="r data">15688.784</TD>
+    <TD class="r data">15395.570</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>SBC</TH>
+    <TD class="r data">15688.784</TD>
+    <TD class="r data">15489.415</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX57></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Test of Global Null Hypothesis" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=4 scope=colgroup>Testing Global Null 
+      Hypothesis: BETA=0</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Test</TH>
+    <TH class="r b header" scope=col>Chi-Square</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;ChiSq</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Likelihood Ratio</TH>
+    <TD class="r data">331.2143</TD>
+    <TD class="r data">19</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Score</TH>
+    <TD class="r data">236.4797</TD>
+    <TD class="r data">19</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Wald</TH>
+    <TD class="r data">224.3037</TD>
+    <TD class="r data">19</TD>
+    <TD class="r data">&lt;.0001</TD></TR></TBODY></TABLE></DIV></DIV><BR><BR>
+<P>
+<DIV align=left>
+<TABLE class=proctitle>
+  <TBODY>
+  <TR>
+    <TD class="l proctitle">Step 6. Effect mixed_income is removed. The model 
+      contains the following effects:</TD></TR></TBODY></TABLE></DIV>
+<P><BR>
+<P>
+<DIV align=left>
+<TABLE class=proctitle>
+  <TBODY>
+  <TR>
+    <TD class="l proctitle">agescaled income mixed2 hubeduc hubblack black_t 
+      blackelow blackemid mixedelow agesc_elow income_elow income_emid 
+      black_income mixed_agesc agesc_income agescaled2 agescaled3 income3 
+  </TD></TR></TBODY></TABLE></DIV>
+<P><A name=IDX58></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Convergence Status" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" scope=col>Convergence Status</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="c data">Convergence criterion (GCONV=1E-8) 
+  satisfied.</TD></TR></TBODY></TABLE></DIV></DIV><BR><A name=IDX59></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Model Fit Statistics" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=3 scope=colgroup>Model Fit Statistics</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Criterion</TH>
+    <TH class="r b header" scope=col>Without<BR>Covariates</TH>
+    <TH class="r b header" scope=col>With<BR>Covariates</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>-2 LOG L</TH>
+    <TD class="r data">15688.784</TD>
+    <TD class="r data">15357.791</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>AIC</TH>
+    <TD class="r data">15688.784</TD>
+    <TD class="r data">15393.791</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>SBC</TH>
+    <TD class="r data">15688.784</TD>
+    <TD class="r data">15482.698</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX60></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Test of Global Null Hypothesis" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=4 scope=colgroup>Testing Global Null 
+      Hypothesis: BETA=0</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Test</TH>
+    <TH class="r b header" scope=col>Chi-Square</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;ChiSq</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Likelihood Ratio</TH>
+    <TD class="r data">330.9926</TD>
+    <TD class="r data">18</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Score</TH>
+    <TD class="r data">236.4102</TD>
+    <TD class="r data">18</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Wald</TH>
+    <TD class="r data">224.2332</TD>
+    <TD class="r data">18</TD>
+    <TD class="r data">&lt;.0001</TD></TR></TBODY></TABLE></DIV></DIV><BR><BR>
+<P>
+<DIV align=left>
+<TABLE class=proctitle>
+  <TBODY>
+  <TR>
+    <TD class="l proctitle">Step 7. Effect black_income is removed. The model 
+      contains the following effects:</TD></TR></TBODY></TABLE></DIV>
+<P><BR>
+<P>
+<DIV align=left>
+<TABLE class=proctitle>
+  <TBODY>
+  <TR>
+    <TD class="l proctitle">agescaled income mixed2 hubeduc hubblack black_t 
+      blackelow blackemid mixedelow agesc_elow income_elow income_emid 
+      mixed_agesc agesc_income agescaled2 agescaled3 income3 
+</TD></TR></TBODY></TABLE></DIV>
+<P><A name=IDX61></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Convergence Status" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" scope=col>Convergence Status</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="c data">Convergence criterion (GCONV=1E-8) 
+  satisfied.</TD></TR></TBODY></TABLE></DIV></DIV><BR><A name=IDX62></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Model Fit Statistics" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=3 scope=colgroup>Model Fit Statistics</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Criterion</TH>
+    <TH class="r b header" scope=col>Without<BR>Covariates</TH>
+    <TH class="r b header" scope=col>With<BR>Covariates</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>-2 LOG L</TH>
+    <TD class="r data">15688.784</TD>
+    <TD class="r data">15357.984</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>AIC</TH>
+    <TD class="r data">15688.784</TD>
+    <TD class="r data">15391.984</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>SBC</TH>
+    <TD class="r data">15688.784</TD>
+    <TD class="r data">15475.951</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX63></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Test of Global Null Hypothesis" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=4 scope=colgroup>Testing Global Null 
+      Hypothesis: BETA=0</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Test</TH>
+    <TH class="r b header" scope=col>Chi-Square</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;ChiSq</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Likelihood Ratio</TH>
+    <TD class="r data">330.8004</TD>
+    <TD class="r data">17</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Score</TH>
+    <TD class="r data">236.1336</TD>
+    <TD class="r data">17</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Wald</TH>
+    <TD class="r data">223.9489</TD>
+    <TD class="r data">17</TD>
+    <TD class="r data">&lt;.0001</TD></TR></TBODY></TABLE></DIV></DIV><BR><BR>
+<P>
+<DIV align=left>
+<TABLE class=proctitle>
+  <TBODY>
+  <TR>
+    <TD class="l proctitle">Step 8. Effect agesc_income is removed. The model 
+      contains the following effects:</TD></TR></TBODY></TABLE></DIV>
+<P><BR>
+<P>
+<DIV align=left>
+<TABLE class=proctitle>
+  <TBODY>
+  <TR>
+    <TD class="l proctitle">agescaled income mixed2 hubeduc hubblack black_t 
+      blackelow blackemid mixedelow agesc_elow income_elow income_emid 
+      mixed_agesc agescaled2 agescaled3 income3 </TD></TR></TBODY></TABLE></DIV>
+<P><A name=IDX64></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Convergence Status" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" scope=col>Convergence Status</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="c data">Convergence criterion (GCONV=1E-8) 
+  satisfied.</TD></TR></TBODY></TABLE></DIV></DIV><BR><A name=IDX65></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Model Fit Statistics" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=3 scope=colgroup>Model Fit Statistics</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Criterion</TH>
+    <TH class="r b header" scope=col>Without<BR>Covariates</TH>
+    <TH class="r b header" scope=col>With<BR>Covariates</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>-2 LOG L</TH>
+    <TD class="r data">15688.784</TD>
+    <TD class="r data">15358.290</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>AIC</TH>
+    <TD class="r data">15688.784</TD>
+    <TD class="r data">15390.290</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>SBC</TH>
+    <TD class="r data">15688.784</TD>
+    <TD class="r data">15469.318</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX66></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Test of Global Null Hypothesis" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=4 scope=colgroup>Testing Global Null 
+      Hypothesis: BETA=0</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Test</TH>
+    <TH class="r b header" scope=col>Chi-Square</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;ChiSq</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Likelihood Ratio</TH>
+    <TD class="r data">330.4938</TD>
+    <TD class="r data">16</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Score</TH>
+    <TD class="r data">236.1256</TD>
+    <TD class="r data">16</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Wald</TH>
+    <TD class="r data">223.9700</TD>
+    <TD class="r data">16</TD>
+    <TD class="r data">&lt;.0001</TD></TR></TBODY></TABLE></DIV></DIV><BR><BR>
+<P>
+<DIV align=left>
+<TABLE class=proctitle>
+  <TBODY>
+  <TR>
+    <TD class="l proctitle">Step 9. Effect income_emid is removed. The model 
+      contains the following effects:</TD></TR></TBODY></TABLE></DIV>
+<P><BR>
+<P>
+<DIV align=left>
+<TABLE class=proctitle>
+  <TBODY>
+  <TR>
+    <TD class="l proctitle">agescaled income mixed2 hubeduc hubblack black_t 
+      blackelow blackemid mixedelow agesc_elow income_elow mixed_agesc 
+      agescaled2 agescaled3 income3 </TD></TR></TBODY></TABLE></DIV>
+<P><A name=IDX67></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Convergence Status" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" scope=col>Convergence Status</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="c data">Convergence criterion (GCONV=1E-8) 
+  satisfied.</TD></TR></TBODY></TABLE></DIV></DIV><BR><A name=IDX68></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Model Fit Statistics" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=3 scope=colgroup>Model Fit Statistics</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Criterion</TH>
+    <TH class="r b header" scope=col>Without<BR>Covariates</TH>
+    <TH class="r b header" scope=col>With<BR>Covariates</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>-2 LOG L</TH>
+    <TD class="r data">15688.784</TD>
+    <TD class="r data">15359.121</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>AIC</TH>
+    <TD class="r data">15688.784</TD>
+    <TD class="r data">15389.121</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>SBC</TH>
+    <TD class="r data">15688.784</TD>
+    <TD class="r data">15463.210</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX69></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Test of Global Null Hypothesis" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=4 scope=colgroup>Testing Global Null 
+      Hypothesis: BETA=0</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Test</TH>
+    <TH class="r b header" scope=col>Chi-Square</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;ChiSq</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Likelihood Ratio</TH>
+    <TD class="r data">329.6627</TD>
+    <TD class="r data">15</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Score</TH>
+    <TD class="r data">235.1390</TD>
+    <TD class="r data">15</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Wald</TH>
+    <TD class="r data">222.9853</TD>
+    <TD class="r data">15</TD>
+    <TD class="r data">&lt;.0001</TD></TR></TBODY></TABLE></DIV></DIV><BR><BR>
+<P>
+<DIV align=left>
+<TABLE class=proctitle>
+  <TBODY>
+  <TR>
+    <TD class="l proctitle">Step 10. Effect mixedelow is removed. The model 
+      contains the following effects:</TD></TR></TBODY></TABLE></DIV>
+<P><BR>
+<P>
+<DIV align=left>
+<TABLE class=proctitle>
+  <TBODY>
+  <TR>
+    <TD class="l proctitle">agescaled income mixed2 hubeduc hubblack black_t 
+      blackelow blackemid agesc_elow income_elow mixed_agesc agescaled2 
+      agescaled3 income3 </TD></TR></TBODY></TABLE></DIV>
+<P><A name=IDX70></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Convergence Status" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" scope=col>Convergence Status</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="c data">Convergence criterion (GCONV=1E-8) 
+  satisfied.</TD></TR></TBODY></TABLE></DIV></DIV><BR><A name=IDX71></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Model Fit Statistics" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=3 scope=colgroup>Model Fit Statistics</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Criterion</TH>
+    <TH class="r b header" scope=col>Without<BR>Covariates</TH>
+    <TH class="r b header" scope=col>With<BR>Covariates</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>-2 LOG L</TH>
+    <TD class="r data">15688.784</TD>
+    <TD class="r data">15359.884</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>AIC</TH>
+    <TD class="r data">15688.784</TD>
+    <TD class="r data">15387.884</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>SBC</TH>
+    <TD class="r data">15688.784</TD>
+    <TD class="r data">15457.034</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX72></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Test of Global Null Hypothesis" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=4 scope=colgroup>Testing Global Null 
+      Hypothesis: BETA=0</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Test</TH>
+    <TH class="r b header" scope=col>Chi-Square</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;ChiSq</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Likelihood Ratio</TH>
+    <TD class="r data">328.9000</TD>
+    <TD class="r data">14</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Score</TH>
+    <TD class="r data">233.8405</TD>
+    <TD class="r data">14</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Wald</TH>
+    <TD class="r data">221.5862</TD>
+    <TD class="r data">14</TD>
+    <TD class="r data">&lt;.0001</TD></TR></TBODY></TABLE></DIV></DIV><BR><BR>
+<P>
+<DIV align=left>
+<TABLE class=proctitle>
+  <TBODY>
+  <TR>
+    <TD class="l proctitle">Step 11. Effect blackemid is removed. The model 
+      contains the following effects:</TD></TR></TBODY></TABLE></DIV>
+<P><BR>
+<P>
+<DIV align=left>
+<TABLE class=proctitle>
+  <TBODY>
+  <TR>
+    <TD class="l proctitle">agescaled income mixed2 hubeduc hubblack black_t 
+      blackelow agesc_elow income_elow mixed_agesc agescaled2 agescaled3 income3 
+    </TD></TR></TBODY></TABLE></DIV>
+<P><A name=IDX73></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Convergence Status" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" scope=col>Convergence Status</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="c data">Convergence criterion (GCONV=1E-8) 
+  satisfied.</TD></TR></TBODY></TABLE></DIV></DIV><BR><A name=IDX74></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Model Fit Statistics" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=3 scope=colgroup>Model Fit Statistics</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Criterion</TH>
+    <TH class="r b header" scope=col>Without<BR>Covariates</TH>
+    <TH class="r b header" scope=col>With<BR>Covariates</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>-2 LOG L</TH>
+    <TD class="r data">15688.784</TD>
+    <TD class="r data">15361.069</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>AIC</TH>
+    <TD class="r data">15688.784</TD>
+    <TD class="r data">15387.069</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>SBC</TH>
+    <TD class="r data">15688.784</TD>
+    <TD class="r data">15451.279</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX75></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Test of Global Null Hypothesis" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=4 scope=colgroup>Testing Global Null 
+      Hypothesis: BETA=0</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Test</TH>
+    <TH class="r b header" scope=col>Chi-Square</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;ChiSq</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Likelihood Ratio</TH>
+    <TD class="r data">327.7151</TD>
+    <TD class="r data">13</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Score</TH>
+    <TD class="r data">232.6351</TD>
+    <TD class="r data">13</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Wald</TH>
+    <TD class="r data">220.5860</TD>
+    <TD class="r data">13</TD>
+    <TD class="r data">&lt;.0001</TD></TR></TBODY></TABLE></DIV></DIV><BR><BR>
+<P>
+<DIV align=left>
+<TABLE class=proctitle>
+  <TBODY>
+  <TR>
+    <TD class="l proctitle">Step 12. Effect blackelow is removed. The model 
+      contains the following effects:</TD></TR></TBODY></TABLE></DIV>
+<P><BR>
+<P>
+<DIV align=left>
+<TABLE class=proctitle>
+  <TBODY>
+  <TR>
+    <TD class="l proctitle">agescaled income mixed2 hubeduc hubblack black_t 
+      agesc_elow income_elow mixed_agesc agescaled2 agescaled3 income3 
+  </TD></TR></TBODY></TABLE></DIV>
+<P><A name=IDX76></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Convergence Status" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" scope=col>Convergence Status</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="c data">Convergence criterion (GCONV=1E-8) 
+  satisfied.</TD></TR></TBODY></TABLE></DIV></DIV><BR><A name=IDX77></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Model Fit Statistics" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=3 scope=colgroup>Model Fit Statistics</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Criterion</TH>
+    <TH class="r b header" scope=col>Without<BR>Covariates</TH>
+    <TH class="r b header" scope=col>With<BR>Covariates</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>-2 LOG L</TH>
+    <TD class="r data">15688.784</TD>
+    <TD class="r data">15362.687</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>AIC</TH>
+    <TD class="r data">15688.784</TD>
+    <TD class="r data">15386.687</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>SBC</TH>
+    <TD class="r data">15688.784</TD>
+    <TD class="r data">15445.958</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX78></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Test of Global Null Hypothesis" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=4 scope=colgroup>Testing Global Null 
+      Hypothesis: BETA=0</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Test</TH>
+    <TH class="r b header" scope=col>Chi-Square</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;ChiSq</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Likelihood Ratio</TH>
+    <TD class="r data">326.0966</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Score</TH>
+    <TD class="r data">228.3507</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Wald</TH>
+    <TD class="r data">217.2616</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">&lt;.0001</TD></TR></TBODY></TABLE></DIV></DIV><BR><BR>
+<P>
+<DIV align=left>
+<TABLE class=proctitle>
+  <TBODY>
+  <TR>
+    <TD class="l proctitle">Step 13. Effect agescaled3 is removed. The model 
+      contains the following effects:</TD></TR></TBODY></TABLE></DIV>
+<P><BR>
+<P>
+<DIV align=left>
+<TABLE class=proctitle>
+  <TBODY>
+  <TR>
+    <TD class="l proctitle">agescaled income mixed2 hubeduc hubblack black_t 
+      agesc_elow income_elow mixed_agesc agescaled2 income3 
+</TD></TR></TBODY></TABLE></DIV>
+<P><A name=IDX79></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Convergence Status" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" scope=col>Convergence Status</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="c data">Convergence criterion (GCONV=1E-8) 
+  satisfied.</TD></TR></TBODY></TABLE></DIV></DIV><BR><A name=IDX80></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Model Fit Statistics" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=3 scope=colgroup>Model Fit Statistics</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Criterion</TH>
+    <TH class="r b header" scope=col>Without<BR>Covariates</TH>
+    <TH class="r b header" scope=col>With<BR>Covariates</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>-2 LOG L</TH>
+    <TD class="r data">15688.784</TD>
+    <TD class="r data">15365.129</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>AIC</TH>
+    <TD class="r data">15688.784</TD>
+    <TD class="r data">15387.129</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>SBC</TH>
+    <TD class="r data">15688.784</TD>
+    <TD class="r data">15441.461</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX81></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Test of Global Null Hypothesis" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=4 scope=colgroup>Testing Global Null 
+      Hypothesis: BETA=0</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Test</TH>
+    <TH class="r b header" scope=col>Chi-Square</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;ChiSq</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Likelihood Ratio</TH>
+    <TD class="r data">323.6548</TD>
+    <TD class="r data">11</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Score</TH>
+    <TD class="r data">221.3536</TD>
+    <TD class="r data">11</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Wald</TH>
+    <TD class="r data">211.7687</TD>
+    <TD class="r data">11</TD>
+    <TD class="r data">&lt;.0001</TD></TR></TBODY></TABLE></DIV></DIV><BR><BR>
+<P>
+<DIV align=left>
+<TABLE class=notecontent>
+  <TBODY>
+  <TR>
+    <TD class="l notebanner">Note:</TD>
+    <TD class="l notecontent">No (additional) effects met the 0.05 level for 
+      removal from the model.</TD></TR></TBODY></TABLE></DIV>
+<P><A name=IDX82></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Maximum Likelihood Estimates of Model Parameters" 
+frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=7 scope=colgroup>Analysis of Maximum 
+      Likelihood Estimates</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Parameter</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>Parameter<BR>Estimate</TH>
+    <TH class="r b header" scope=col>Standard<BR>Error</TH>
+    <TH class="r b header" scope=col>Chi-Square</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;ChiSq</TH>
+    <TH class="r b header" scope=col>Hazard<BR>Ratio</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>agescaled</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data" noWrap>-0.07287</TD>
+    <TD class="r data">0.02697</TD>
+    <TD class="r data">7.3031</TD>
+    <TD class="r data">0.0069</TD>
+    <TD class="r data">0.930</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>income</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">0.00996</TD>
+    <TD class="r data">0.00656</TD>
+    <TD class="r data">2.3016</TD>
+    <TD class="r data">0.1292</TD>
+    <TD class="r data">1.010</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>mixed2</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">0.21366</TD>
+    <TD class="r data">0.07978</TD>
+    <TD class="r data">7.1730</TD>
+    <TD class="r data">0.0074</TD>
+    <TD class="r data">1.238</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>hubeduc</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data" noWrap>-0.35831</TD>
+    <TD class="r data">0.10873</TD>
+    <TD class="r data">10.8599</TD>
+    <TD class="r data">0.0010</TD>
+    <TD class="r data">0.699</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>hubblack</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data" noWrap>-0.05122</TD>
+    <TD class="r data">0.12347</TD>
+    <TD class="r data">0.1721</TD>
+    <TD class="r data">0.6783</TD>
+    <TD class="r data">0.950</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>black_t</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">0.02068</TD>
+    <TD class="r data">0.00903</TD>
+    <TD class="r data">5.2509</TD>
+    <TD class="r data">0.0219</TD>
+    <TD class="r data">1.021</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>agesc_elow</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data" noWrap>-0.12827</TD>
+    <TD class="r data">0.04269</TD>
+    <TD class="r data">9.0282</TD>
+    <TD class="r data">0.0027</TD>
+    <TD class="r data">0.880</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>income_elow</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data" noWrap>-0.01317</TD>
+    <TD class="r data">0.00231</TD>
+    <TD class="r data">32.6126</TD>
+    <TD class="r data">&lt;.0001</TD>
+    <TD class="r data">0.987</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>mixed_agesc</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">0.12181</TD>
+    <TD class="r data">0.05033</TD>
+    <TD class="r data">5.8575</TD>
+    <TD class="r data">0.0155</TD>
+    <TD class="r data">1.130</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>agescaled2</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data" noWrap>-0.11215</TD>
+    <TD class="r data">0.00925</TD>
+    <TD class="r data">146.9118</TD>
+    <TD class="r data">&lt;.0001</TD>
+    <TD class="r data">0.894</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>income3</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data" noWrap>-8.7923E-7</TD>
+    <TD class="r data" noWrap>4.22292E-7</TD>
+    <TD class="r data">4.3349</TD>
+    <TD class="r data">0.0373</TD>
+    <TD class="r data">1.000</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX83></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Model Building Summary" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=6 scope=colgroup>Summary of Backward 
+      Elimination</TH></TR>
+  <TR>
+    <TH class="r b header" scope=col>Step</TH>
+    <TH class="l b header" scope=col>Effect <BR>Removed</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>Number<BR>In</TH>
+    <TH class="r b header" scope=col>Wald<BR>Chi-Square</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;ChiSq</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="r rowheader" scope=row>1</TH>
+    <TD class="l data">mixedemid</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">23</TD>
+    <TD class="r data">0.0177</TD>
+    <TD class="r data">0.8943</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>2</TH>
+    <TD class="l data">black_mixed</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">22</TD>
+    <TD class="r data">0.0389</TD>
+    <TD class="r data">0.8436</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>3</TH>
+    <TD class="l data">agesc_emid</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">21</TD>
+    <TD class="r data">0.0693</TD>
+    <TD class="r data">0.7923</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>4</TH>
+    <TD class="l data">black_age</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">20</TD>
+    <TD class="r data">0.1432</TD>
+    <TD class="r data">0.7051</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>5</TH>
+    <TD class="l data">income2</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">19</TD>
+    <TD class="r data">0.1991</TD>
+    <TD class="r data">0.6555</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>6</TH>
+    <TD class="l data">mixed_income</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">18</TD>
+    <TD class="r data">0.2216</TD>
+    <TD class="r data">0.6378</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>7</TH>
+    <TD class="l data">black_income</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">17</TD>
+    <TD class="r data">0.1922</TD>
+    <TD class="r data">0.6611</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>8</TH>
+    <TD class="l data">agesc_income</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">16</TD>
+    <TD class="r data">0.3064</TD>
+    <TD class="r data">0.5799</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>9</TH>
+    <TD class="l data">income_emid</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">15</TD>
+    <TD class="r data">0.8318</TD>
+    <TD class="r data">0.3618</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>10</TH>
+    <TD class="l data">mixedelow</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">14</TD>
+    <TD class="r data">0.7644</TD>
+    <TD class="r data">0.3819</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>11</TH>
+    <TD class="l data">blackemid</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">13</TD>
+    <TD class="r data">1.2865</TD>
+    <TD class="r data">0.2567</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>12</TH>
+    <TD class="l data">blackelow</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">1.6179</TD>
+    <TD class="r data">0.2034</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>13</TH>
+    <TD class="l data">agescaled3</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">11</TD>
+    <TD class="r data">2.5074</TD>
+    <TD class="r data">0.1133</TD></TR></TBODY></TABLE></DIV></DIV><BR></DIV>
+<DIV class=branch>
+<P style="PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3>
+<A name=IDX84></A>
+<TABLE class=systitleandfootercontainer cellSpacing=1 cellPadding=1 rules=none 
+width="100%" summary="Page Layout" border=0 frame=void>
+  <TBODY>
+  <TR>
+    <TD class="c systemtitle">The SAS System</TD></TR></TBODY></TABLE><BR>
+<DIV class="c proctitle">The PHREG Procedure</DIV>
+<P>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Model Information" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=2 scope=colgroup>Model 
+  Information</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Data Set</TH>
+    <TD class="l data">F532.INTER3</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Dependent Variable</TH>
+    <TD class="l data">years</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Censoring Variable</TH>
+    <TD class="l data">divorce</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Censoring Value(s)</TH>
+    <TD class="l data">0</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Ties Handling</TH>
+    <TD class="l data">BRESLOW</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX85></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Number of Observations" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <TBODY>
+  <TR>
+    <TH class="l stacked_cell rowheader" scope=row>
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="l rowheader top_stacked_value" scope=row>Number of 
+            Observations Read</TD></TR>
+        <TR>
+          <TD class="l rowheader bottom_stacked_value" scope=row>Number of 
+            Observations Used</TD></TR></TBODY></TABLE></TH>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">3371</TD></TR>
+        <TR>
+          <TD 
+  class="r data bottom_stacked_value">3371</TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX86></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Class Level Information" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=8 scope=colgroup>Class Level 
+  Information</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Class</TH>
+    <TH class="l b header" scope=col>Value</TH>
+    <TH class="c b header" colSpan=6 scope=colgroup>Design 
+  Variables</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>hubeduc</TH>
+    <TH class="l rowheader" scope=row>0</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">&nbsp;</TD>
+    <TD class="r data">&nbsp;</TD>
+    <TD class="r data">&nbsp;</TD>
+    <TD class="r data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>&nbsp;</TH>
+    <TH class="l rowheader" scope=row>1</TH>
+    <TD class="r data">0</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">&nbsp;</TD>
+    <TD class="r data">&nbsp;</TD>
+    <TD class="r data">&nbsp;</TD>
+    <TD class="r data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>&nbsp;</TH>
+    <TH class="l rowheader" scope=row>2</TH>
+    <TD class="r data">0</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">&nbsp;</TD>
+    <TD class="r data">&nbsp;</TD>
+    <TD class="r data">&nbsp;</TD>
+    <TD class="r data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>agegroup</TH>
+    <TH class="l rowheader" scope=row>0</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">0</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>&nbsp;</TH>
+    <TH class="l rowheader" scope=row>1</TH>
+    <TD class="r data">0</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">0</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>&nbsp;</TH>
+    <TH class="l rowheader" scope=row>2</TH>
+    <TD class="r data">0</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">0</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>&nbsp;</TH>
+    <TH class="l rowheader" scope=row>3</TH>
+    <TD class="r data">0</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">0</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>&nbsp;</TH>
+    <TH class="l rowheader" scope=row>4</TH>
+    <TD class="r data">0</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">0</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>&nbsp;</TH>
+    <TH class="l rowheader" scope=row>5</TH>
+    <TD class="r data">0</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">1</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>&nbsp;</TH>
+    <TH class="l rowheader" scope=row>6</TH>
+    <TD class="r data">0</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">0</TD></TR></TBODY></TABLE></DIV></DIV><BR><A name=IDX87></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Summary of Event and Censored Observations" 
+  frame=box><COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=4 scope=colgroup>Summary of the Number of 
+      Event and Censored<BR>Values</TH></TR>
+  <TR>
+    <TH class="r b header" scope=col>Total</TH>
+    <TH class="r b header" scope=col>Event</TH>
+    <TH class="r b header" scope=col>Censored</TH>
+    <TH class="r b header" scope=col>Percent<BR>Censored</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="r data">3371</TD>
+    <TD class="r data">1032</TD>
+    <TD class="r data">2339</TD>
+    <TD class="r data">69.39</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX88></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Convergence Status" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" scope=col>Convergence Status</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="c data">Convergence criterion (GCONV=1E-8) 
+  satisfied.</TD></TR></TBODY></TABLE></DIV></DIV><BR><A name=IDX89></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Model Fit Statistics" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=3 scope=colgroup>Model Fit Statistics</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Criterion</TH>
+    <TH class="r b header" scope=col>Without<BR>Covariates</TH>
+    <TH class="r b header" scope=col>With<BR>Covariates</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>-2 LOG L</TH>
+    <TD class="r data">15688.784</TD>
+    <TD class="r data">15395.856</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>AIC</TH>
+    <TD class="r data">15688.784</TD>
+    <TD class="r data">15427.856</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>SBC</TH>
+    <TD class="r data">15688.784</TD>
+    <TD class="r data">15506.884</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX90></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Test of Global Null Hypothesis" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=4 scope=colgroup>Testing Global Null 
+      Hypothesis: BETA=0</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Test</TH>
+    <TH class="r b header" scope=col>Chi-Square</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;ChiSq</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Likelihood Ratio</TH>
+    <TD class="r data">292.9280</TD>
+    <TD class="r data">16</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Score</TH>
+    <TD class="r data">238.7538</TD>
+    <TD class="r data">16</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Wald</TH>
+    <TD class="r data">197.5153</TD>
+    <TD class="r data">16</TD>
+    <TD class="r data">&lt;.0001</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX91></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Type 3 Chi-Square Tests" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=4 scope=colgroup>Type 3 Tests</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Effect</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>Wald Chi-Square</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;ChiSq</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>mixed2</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">7.5326</TD>
+    <TD class="r data">0.0061</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>hubeduc</TH>
+    <TD class="r data">2</TD>
+    <TD class="r data">11.3945</TD>
+    <TD class="r data">0.0034</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>hubblack</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">0.1737</TD>
+    <TD class="r data">0.6769</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>black_t</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">4.7789</TD>
+    <TD class="r data">0.0288</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>agesc_elow</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">10.3577</TD>
+    <TD class="r data">0.0013</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>income</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">2.8443</TD>
+    <TD class="r data">0.0917</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>income_elow</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">8.3739</TD>
+    <TD class="r data">0.0038</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>income3</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">4.9485</TD>
+    <TD class="r data">0.0261</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>mixed_agesc</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">5.2742</TD>
+    <TD class="r data">0.0216</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>agegroup</TH>
+    <TD class="r data">6</TD>
+    <TD class="r data">128.3191</TD>
+    <TD class="r data">&lt;.0001</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX92></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Phreg: Maximum Likelihood Estimates of Model Parameters" 
+frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=9 scope=colgroup>Analysis of Maximum 
+      Likelihood Estimates</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Parameter</TH>
+    <TH class="l b header" scope=col>&nbsp;</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>Parameter<BR>Estimate</TH>
+    <TH class="r b header" scope=col>Standard<BR>Error</TH>
+    <TH class="r b header" scope=col>Chi-Square</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;ChiSq</TH>
+    <TH class="r b header" scope=col>Hazard<BR>Ratio</TH>
+    <TH class="l b header" scope=col>Label</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>mixed2</TH>
+    <TH class="l rowheader" scope=row>&nbsp;</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">0.21861</TD>
+    <TD class="r data">0.07965</TD>
+    <TD class="r data">7.5326</TD>
+    <TD class="r data">0.0061</TD>
+    <TD class="r data">1.244</TD>
+    <TD class="l data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>hubeduc</TH>
+    <TH class="l rowheader" scope=row>0</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">0.61259</TD>
+    <TD class="r data">0.36048</TD>
+    <TD class="r data">2.8879</TD>
+    <TD class="r data">0.0892</TD>
+    <TD class="r data">1.845</TD>
+    <TD class="l data">hubeduc 0</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>hubeduc</TH>
+    <TH class="l rowheader" scope=row>2</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data" noWrap>-0.34023</TD>
+    <TD class="r data">0.10990</TD>
+    <TD class="r data">9.5833</TD>
+    <TD class="r data">0.0020</TD>
+    <TD class="r data">0.712</TD>
+    <TD class="l data">hubeduc 2</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>hubblack</TH>
+    <TH class="l rowheader" scope=row>&nbsp;</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data" noWrap>-0.05147</TD>
+    <TD class="r data">0.12352</TD>
+    <TD class="r data">0.1737</TD>
+    <TD class="r data">0.6769</TD>
+    <TD class="r data">0.950</TD>
+    <TD class="l data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>black_t</TH>
+    <TH class="l rowheader" scope=row>&nbsp;</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">0.01975</TD>
+    <TD class="r data">0.00903</TD>
+    <TD class="r data">4.7789</TD>
+    <TD class="r data">0.0288</TD>
+    <TD class="r data">1.020</TD>
+    <TD class="l data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>agesc_elow</TH>
+    <TH class="l rowheader" scope=row>&nbsp;</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data" noWrap>-0.12572</TD>
+    <TD class="r data">0.03906</TD>
+    <TD class="r data">10.3577</TD>
+    <TD class="r data">0.0013</TD>
+    <TD class="r data">0.882</TD>
+    <TD class="l data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>income</TH>
+    <TH class="l rowheader" scope=row>&nbsp;</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">0.01220</TD>
+    <TD class="r data">0.00724</TD>
+    <TD class="r data">2.8443</TD>
+    <TD class="r data">0.0917</TD>
+    <TD class="r data">1.012</TD>
+    <TD class="l data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>income_elow</TH>
+    <TH class="l rowheader" scope=row>&nbsp;</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data" noWrap>-0.01720</TD>
+    <TD class="r data">0.00595</TD>
+    <TD class="r data">8.3739</TD>
+    <TD class="r data">0.0038</TD>
+    <TD class="r data">0.983</TD>
+    <TD class="l data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>income3</TH>
+    <TH class="l rowheader" scope=row>&nbsp;</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data" noWrap>-9.9567E-7</TD>
+    <TD class="r data" noWrap>4.47591E-7</TD>
+    <TD class="r data">4.9485</TD>
+    <TD class="r data">0.0261</TD>
+    <TD class="r data">1.000</TD>
+    <TD class="l data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>mixed_agesc</TH>
+    <TH class="l rowheader" scope=row>&nbsp;</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">0.10873</TD>
+    <TD class="r data">0.04734</TD>
+    <TD class="r data">5.2742</TD>
+    <TD class="r data">0.0216</TD>
+    <TD class="r data">1.115</TD>
+    <TD class="l data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>agegroup</TH>
+    <TH class="l rowheader" scope=row>0</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data" noWrap>-9.62424</TD>
+    <TD class="r data">148.83086</TD>
+    <TD class="r data">0.0042</TD>
+    <TD class="r data">0.9484</TD>
+    <TD class="r data">0.000</TD>
+    <TD class="l data">agegroup 0</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>agegroup</TH>
+    <TH class="l rowheader" scope=row>1</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">1.07769</TD>
+    <TD class="r data">0.78033</TD>
+    <TD class="r data">1.9074</TD>
+    <TD class="r data">0.1673</TD>
+    <TD class="r data">2.938</TD>
+    <TD class="l data">agegroup 1</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>agegroup</TH>
+    <TH class="l rowheader" scope=row>2</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">2.63940</TD>
+    <TD class="r data">0.72317</TD>
+    <TD class="r data">13.3209</TD>
+    <TD class="r data">0.0003</TD>
+    <TD class="r data">14.005</TD>
+    <TD class="l data">agegroup 2</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>agegroup</TH>
+    <TH class="l rowheader" scope=row>3</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">3.09130</TD>
+    <TD class="r data">0.71649</TD>
+    <TD class="r data">18.6147</TD>
+    <TD class="r data">&lt;.0001</TD>
+    <TD class="r data">22.006</TD>
+    <TD class="l data">agegroup 3</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>agegroup</TH>
+    <TH class="l rowheader" scope=row>4</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">2.73552</TD>
+    <TD class="r data">0.71408</TD>
+    <TD class="r data">14.6752</TD>
+    <TD class="r data">0.0001</TD>
+    <TD class="r data">15.418</TD>
+    <TD class="l data">agegroup 4</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>agegroup</TH>
+    <TH class="l rowheader" scope=row>5</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">1.93916</TD>
+    <TD class="r data">0.72669</TD>
+    <TD class="r data">7.1209</TD>
+    <TD class="r data">0.0076</TD>
+    <TD class="r data">6.953</TD>
+    <TD class="l data">agegroup 
+5</TD></TR></TBODY></TABLE></DIV></DIV><BR></DIV></BODY></HTML>
