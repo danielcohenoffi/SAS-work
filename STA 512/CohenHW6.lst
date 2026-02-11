@@ -1,0 +1,77 @@
+                                            The SAS System            06:51 Friday, March 29, 2024   1
+
+                                          The REG Procedure
+                                            Model: MODEL1
+                                     Dependent Variable: Density 
+
+                               Number of Observations Read         252
+                               Number of Observations Used         252
+
+
+                                         Analysis of Variance
+ 
+                                                Sum of           Mean
+            Source                   DF        Squares         Square    F Value    Pr > F
+
+            Model                     3        0.04122        0.01374      68.56    <.0001
+            Error                   248        0.04969     0.00020038                     
+            Corrected Total         251        0.09091                                    
+
+
+                         Root MSE              0.01416    R-Square     0.4534
+                         Dependent Mean        1.05557    Adj R-Sq     0.4468
+                         Coeff Var             1.34103                       
+
+
+                                         Parameter Estimates
+ 
+                              Parameter       Standard                              Variance
+         Variable     DF       Estimate          Error    t Value    Pr > |t|      Inflation
+
+         Intercept     1        0.97953        0.02448      40.01      <.0001              0
+         Height        1        0.00152     0.00025933       5.86      <.0001        1.13020
+         Weight        1    -0.00052336     0.00004476     -11.69      <.0001        2.16711
+         Wrist         1        0.00346        0.00142       2.45      0.0151        2.18813
+
+
+                            Collinearity Diagnostics (intercept adjusted)
+ 
+                                      Condition    ---------Proportion of Variation---------
+           Number     Eigenvalue          Index         Height         Weight          Wrist
+
+                1        1.94093        1.00000        0.08355        0.09655        0.09668
+                2        0.78901        1.56843        0.91556        0.05793        0.04895
+                3        0.27007        2.68084     0.00088270        0.84553        0.85437
+                                            The SAS System            06:51 Friday, March 29, 2024   2
+
+                                          The CORR Procedure
+
+                          4  Variables:    Height   Weight   Forearm  Wrist    
+
+
+                                          Simple Statistics
+ 
+      Variable           N          Mean       Std Dev           Sum       Minimum       Maximum
+
+      Height           252      70.14881       3.66286         17678      29.50000      77.75000
+      Weight           252     178.92440      29.38916         45089     118.50000     363.15000
+      Forearm          252      28.66389       2.02069          7223      21.00000      34.90000
+      Wrist            252      18.22976       0.93358          4594      15.80000      21.40000
+
+
+                             Pearson Correlation Coefficients, N = 252 
+                                     Prob > |r| under H0: Rho=0
+ 
+                                  Height        Weight       Forearm         Wrist
+
+                   Height        1.00000       0.30828       0.22865       0.32207
+                                                <.0001        0.0003        <.0001
+
+                   Weight        0.30828       1.00000       0.63030       0.72977
+                                  <.0001                      <.0001        <.0001
+
+                   Forearm       0.22865       0.63030       1.00000       0.58559
+                                  0.0003        <.0001                      <.0001
+
+                   Wrist         0.32207       0.72977       0.58559       1.00000
+                                  <.0001        <.0001        <.0001              

@@ -1,0 +1,107 @@
+1                                                          The SAS System                               06:51 Friday, March 29, 2024
+
+NOTE: Unable to open SASUSER.REGSTRY. WORK.REGSTRY will be opened instead.
+NOTE: All registry changes will be lost at the end of the session.
+
+WARNING: Unable to copy SASUSER registry to WORK registry. Because of this, you will not see registry customizations during this 
+         session.
+ERROR: Expecting page 1, got page -1 instead.
+ERROR: Page validation error while reading SASUSER.PROFILE.CATALOG.
+NOTE: Unable to open SASUSER.PROFILE. WORK.PROFILE will be opened instead.
+NOTE: All profile changes will be lost at the end of the session.
+NOTE: Copyright (c) 2002-2012 by SAS Institute Inc., Cary, NC, USA. 
+NOTE: SAS (r) Proprietary Software 9.4 (TS1M0) 
+      Licensed to WEST CHESTER UNIVERSITY - T&R SFA, Site 70149859.
+NOTE: This session is executing on the X64_DSRV12  platform.
+
+
+
+NOTE: Updated analytical products:
+      
+      SAS/STAT 12.3 (maintenance)
+      SAS/ETS 12.3 (maintenance)
+      SAS/OR 12.3 (maintenance)
+      SAS/IML 12.3 (maintenance)
+      SAS/QC 12.3 (maintenance)
+
+NOTE: Additional host information:
+
+ X64_DSRV12 WIN 6.2.9200  Server
+
+NOTE: SAS initialization used:
+      real time           0.18 seconds
+      cpu time            0.12 seconds
+      
+1          data Hw6;
+2          set '\\apporto.com\dfs\WCUPA\Users\dc1030974_wcupa\Desktop\Datasets\homework6';
+3          run;
+
+NOTE: There were 252 observations read from the data set 
+      \\apporto.com\dfs\WCUPA\Users\dc1030974_wcupa\Desktop\Datasets\homework6.
+NOTE: The data set WORK.HW6 has 252 observations and 7 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.01 seconds
+      
+
+4          
+5          proc reg data = work.hw6 plots = none;
+6          model density = height weight wrist /vif collinoint;
+7          
+8          output out=newdata p=pred residual=ei stdr=s_ei rstudent=jackknife h = leverage cookd =
+8        ! cooks student=student;
+9          run;
+
+10         
+11         
+2                                           The SAS System                06:51 Friday, March 29, 2024
+
+
+NOTE: The data set WORK.NEWDATA has 252 observations and 14 variables.
+NOTE: The PROCEDURE REG printed page 1.
+NOTE: PROCEDURE REG used (Total process time):
+      real time           0.03 seconds
+      cpu time            0.03 seconds
+      
+
+12         proc corr data = work.hw6;
+13         var height weight forearm wrist;
+14         run;
+
+NOTE: The PROCEDURE CORR printed page 2.
+NOTE: PROCEDURE CORR used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+15         /*
+16         proc plot data = work.newdata;
+17         plot pred * jackknife = '*';
+18         run;
+19         */
+20         /*
+21         proc univariate data = work.newdata normal normaltest plots;
+22         var jackknife;
+23         histogram;
+24         
+25         
+26         run;
+27         
+28         
+29         *//*
+30         proc sort data = newdata;
+31         by descending cooks leverage;
+32         run;
+33         
+34         proc print data = newdata;
+35         var jackknife cooks leverage;
+36         run;
+37         
+
+ERROR: Errors printed on page 1.
+
+NOTE: SAS Institute Inc., SAS Campus Drive, Cary, NC USA 27513-2414
+NOTE: The SAS System used:
+      real time           0.28 seconds
+      cpu time            0.23 seconds
+      
